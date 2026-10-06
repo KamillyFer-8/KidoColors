@@ -4,16 +4,19 @@ O repositório local usa a branch `main`. `.gitignore` exclui credenciais `.env`
 
 ## O que o CI verifica
 
-`.github/workflows/ci.yml` define dois jobs independentes em Ubuntu 24.04, disparados por push à main, pull requests e execução manual:
+`.github/workflows/ci.yml` define três jobs independentes em Ubuntu 24.04, disparados por push à main, pull requests e execução manual:
 
 | Job | Verificações |
 |---|---|
 | Java — Core e API | Java 21, instalação do Chromium e bibliotecas Linux, `mvn verify`: compilação, testes e JAR |
 | Front-End — lint, testes e build | Node 24.18.0, `npm ci`, ESLint, Vitest, TypeScript e build Vite |
+| Containers — Nginx, API e PostgreSQL | Validação Compose, build das imagens, prontidão dos serviços, HTTP pelo Nginx e JVM Java 21 |
 
 O passo inicial Maven com `-DskipTests install` instala os módulos locais para que a CLI Playwright consiga resolver o Core. A verificação obrigatória ocorre depois, com `verify` sem pular testes. O cache guarda dependências Maven/npm; o Chromium é instalado explicitamente em cada execução Java. A versão do navegador é escolhida pela dependência Playwright do projeto.
 
-Testes da API usam H2 e scanner simulado; testes próprios do scanner usam Chromium real e páginas locais de teste. O CI não coleta websites do estudo, não executa revisão humana e não valida a integração em PostgreSQL ou as imagens Docker. As verificações dessas fronteiras estão em [Docker](docker.md) e [validação](validation.md). Um CI verde não certifica acessibilidade nem eficácia do detector.
+Testes da API usam H2 e scanner simulado; testes próprios do scanner usam Chromium real e páginas locais de teste. O job Containers constrói as imagens e consulta API/banco através do Nginx, usando PostgreSQL descartável no runner. `scripts/check-container-http.py` faz somente GET: health, histórico e documentos das rotas da SPA. Confere a resposta JSON para evitar confundir um fallback HTML com uma API funcionando. O job remove seus próprios volumes ao terminar; não acessa dados locais do computador.
+
+Essas consultas não renderizam React num navegador, não iniciam uma análise, não verificam a gravação de PNGs ou sua persistência após recriar containers. O CI não coleta websites do estudo nem executa revisão humana. As verificações complementares estão em [Docker](docker.md) e [validação](validation.md). Um CI verde não certifica acessibilidade nem eficácia do detector.
 
 O workflow tem permissão de leitura do código e não publica pacotes, imagens ou site. Não precisa de senha de banco, tokens próprios ou secrets. As versões das actions foram conferidas nas páginas oficiais: [checkout](https://github.com/actions/checkout/releases/tag/v7.0.1), [setup-java](https://github.com/actions/setup-java/releases/tag/v6.0.1), [setup-node](https://github.com/actions/setup-node/releases/tag/v7.0.0). A instalação segue a [documentação Playwright Java para CI](https://playwright.dev/java/docs/ci).
 
@@ -65,6 +68,6 @@ Abra uma pull request para main. O CI compara a mudança pelo conjunto de testes
 
 A configuração de CI está preparada localmente. Em 06/10/2026, `mvn verify` passou com 100 testes (27 Core e 73 Backend), incluindo Chromium real sobre fixtures locais no Windows; o JAR foi gerado. Os 24 testes do front-end, lint, TypeScript e build passaram. Essas execuções locais não confirmam o comportamento do runner Linux ou do workflow remoto.
 
-Não há repositório remoto definido ou execução GitHub Actions confirmada. Não use badge de sucesso ou declare uma execução remota concluída antes de conferir a aba Actions. Screenshots existentes em `docs/screenshots/` são capturas reais da interface com suas limitações descritas no README; não são resultados do estudo.
+O repositório privado [KamillyFer-8/KidoColors](https://github.com/KamillyFer-8/KidoColors) foi criado em 06/10/2026. A execução GitHub Actions deve ser conferida pela aba Actions; os resultados locais acima não são evidência de execução remota. Não use badge de sucesso antes de confirmar o workflow. Screenshots existentes em `docs/screenshots/` são capturas reais da interface com suas limitações descritas no README; não são resultados do estudo.
 
 Antes da Fase 11, ainda é necessário verificar a aplicação com PostgreSQL/containers, executar o protocolo humano de validação e aprovar a seleção do dataset. O estudo não foi iniciado.

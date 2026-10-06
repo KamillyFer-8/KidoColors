@@ -65,3 +65,36 @@ jobs:
         run: npm test
       - name: Verificar TypeScript e gerar build
         run: npm run build
+
+  containers:
+    name: Containers — Nginx, API e PostgreSQL
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      # Disposable runner database; no study data or production credentials.
+      DB_PASSWORD: ci-only-disposable-database
+      COMPOSE_PROJECT_NAME: kidocolors-ci
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - name: Validar Compose sem exibir credenciais
+        run: docker compose config --quiet
+      - name: Construir imagens
+        run: docker compose build
+      - name: Iniciar serviços e aguardar prontidão
+        run: docker compose up -d --wait --wait-timeout 180
+      - name: Verificar API, banco e rotas pelo Nginx
+        run: python3 scripts/check-container-http.py
+      - name: Confirmar JVM Java 21 do container
+        run: |
+          docker compose exec -T backend /opt/java/openjdk/bin/java -version 2>&1 | tee /tmp/kidocolors-java-version.txt
+          grep -Eq 'version "21[.]' /tmp/kidocolors-java-version.txt
+      - name: Mostrar diagnóstico dos serviços
+        if: always()
+        run: |
+          docker compose ps --all
+          docker compose logs --no-color --tail 100
+      - name: Remover apenas containers e volumes descartáveis do runner
+        if: always()
+        run: docker compose down --volumes --remove-orphans
