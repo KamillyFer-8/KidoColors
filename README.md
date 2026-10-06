@@ -1,0 +1,170 @@
+# KidoColors
+
+Projeto Full Stack de portfólio júnior para analisar acessibilidade visual de uma página por URL. O objetivo é oferecer relatório de contraste, simulações de deficiência de visão de cores, sugestões e histórico; depois da validação, permitir um estudo reproduzível com aproximadamente 100 páginas reais.
+
+## Estado atual
+
+Fases 1–7 implementadas: Core, API com JPA, scanner Playwright, motor de contraste/simulações/sugestões/score próprio, interface React, histórico e processamento em lote. POST executa o processamento e salva COMPLETED ou FAILED com duração medida. Textos não avaliáveis ficam fora do score; sem cobertura, score nulo. A interface apresenta formulário, relatório, comparação de capturas, ocorrências, metodologia e histórico paginado com filtro por URL e comparação de dois relatórios. Lotes importam CSV pelo mesmo AnalysisService, registram duração própria, falhas e estatísticas e exportam CSV/JSON. Nenhuma coleta do estudo real foi executada. Consulte as [instruções do Front-End](frontend/README.md), [instruções do Backend](backend/README.md), [execução de lotes](docs/studies.md) e [metodologia](docs/methodology.md).
+
+## Ambiente e VS Code
+
+A estrutura da Fase 8 está preparada: [protocolo de validação manual](docs/validation.md), template vazio em datasets/validation e comando offline para calcular métricas a partir de rótulos humanos. A validação empírica ainda não ocorreu; não há dataset rotulado real nem métricas de eficácia. Isso continua sendo requisito antes do estudo.
+
+Abra esta pasta inteira no VS Code. Use Terminal → Novo Terminal, na raiz.
+
+Ferramentas: JDK 21 (incluindo javac), Maven 3.9+, Node.js LTS com npm, Git e, na Fase 9, Docker Desktop com Compose e suporte a containers Linux. PostgreSQL será executado por Docker; não será necessário instalar um servidor separadamente.
+
+Na inspeção inicial foram encontrados Java 21.0.12.1, Maven 3.9.16, Node/npm, Git e VS Code. Docker não foi encontrado no PATH; pode estar instalado sem estar acessível pelo terminal.
+
+Extensão útil agora: Extension Pack for Java, para navegação, execução e depuração Java. Depois: Spring Boot Extension Pack para iniciar/depurar a API, ESLint para avisos do Front-End e Prettier para formatação. A extensão Docker é opcional para visualizar containers. Os comandos não dependem dessas extensões.
+
+```powershell
+java -version
+javac -version
+mvn -version
+node --version
+npm.cmd --version
+git --version
+docker compose version
+
+# Executar testes e gerar JAR do Core
+$env:PLAYWRIGHT_BROWSERS_PATH = Join-Path (Get-Location).Path '.playwright'
+mvn.cmd '-Dmaven.repo.local=.maven-cache' verify
+```
+
+No PowerShell, npm.cmd evita depender da política de execução de scripts npm.ps1. O parâmetro Maven entre aspas mantém o cache de dependências dentro do projeto e evita o caminho padrão sem permissão encontrado neste ambiente. O JAR será gerado em kidocolors-core/target/. Não há lint Java separado nesta fase; compilação e testes são as verificações atuais.
+
+Antes de executar verify pela primeira vez, instale o Chromium conforme backend/README.md. verify executa Core e Backend e gera também o JAR executável em backend/target/. Verificação da Fase 4 em 06/10/2026: 78 testes passaram (27 Core, 51 Backend), sem falhas ou testes ignorados; BUILD SUCCESS. A integração PostgreSQL real continua pendente; a persistência foi testada com H2.
+
+Verificação da Fase 5 em 06/10/2026: 12 testes do Front-End passaram, lint e build sem erros. A Home e a validação de URL inválida foram conferidas no navegador. A API não estava em execução na porta 8080; a verificação integrada com banco real permanece pendente. Para iniciar a interface em outro terminal:
+
+```powershell
+cd frontend
+npm.cmd ci
+npm.cmd run dev
+```
+
+Verificação da Fase 6 em 06/10/2026: 24 testes do Front-End passaram, lint e build sem erros. Histórico paginado, filtro por URL, métricas da página e comparação de dois relatórios implementados. A variação de score exige a mesma versão do motor, mesma URL, scores válidos e datas distintas. O navegador confirmou o estado de erro com a API indisponível; o histórico com PostgreSQL real ainda precisa de verificação integrada.
+
+Verificação da Fase 7 em 06/10/2026: Maven verify gerou o JAR executável com BUILD SUCCESS; 92 testes Java passaram (27 Core, 65 Backend), incluindo 14 de importação, métricas, persistência e exportação de lotes. Testes de integração usam H2 e scanner simulado, além dos testes existentes do scanner com Chromium e páginas locais. Nenhum CSV do estudo real foi processado; PostgreSQL real permanece pendente.
+
+## Estrutura final proposta
+
+```text
+KidoColors/
+├── frontend/              React + TypeScript
+├── backend/               API Spring e scanner
+├── kidocolors-core/       Java puro, sem Spring ou banco
+├── datasets/              Dataset real, após aprovação
+├── results/               Exportações reais
+├── docs/                  Arquitetura e metodologia
+├── .github/workflows/     CI (Fase 10)
+├── pom.xml                Build Maven dos módulos Java
+├── docker-compose.yml     Execução completa (Fase 9)
+├── .env.example
+└── README.md
+```
+
+Somente os módulos implementados entram no Maven. As configurações Docker e CI estão preparadas, com limites de verificação documentados.
+
+## Arquitetura
+
+React → API Spring → Scanner → KidoColors Core → PostgreSQL.
+
+O React apresenta formulário e relatório. O controller valida o DTO e chama AnalysisService. Esse serviço coordena a coleta pelo Playwright Java, os cálculos pelo Core e a persistência por JPA. O Core recebe dados de cores, sem conhecer URLs ou banco. O scanner captura screenshot e estilos; não decide os critérios matemáticos. O serviço devolve um DTO, sem expor entidades JPA.
+
+Uma aplicação Spring com organização por responsabilidade é suficiente. Não precisamos de microsserviços, filas ou outro servidor para o scanner.
+
+## Modelo do banco proposto
+
+| Tabela | Dados principais |
+|---|---|
+| analysis | UUID, URL solicitada/final, categoria opcional, created_at, finished_at, duration_ms, status, score anulável, elements_analyzed, total_issues, contagens por tipo, error_message, caminhos das screenshots, versão do motor e configuração da coleta |
+| accessibility_issue | UUID, analysis_id, tipo, severidade, mensagem, texto, cores originais/simuladas, razão e limiar de contraste, seletor, bounding box, simulação e sugestão |
+| study_run | UUID, nome, início/fim, duration_ms, total_urls, sucessos/falhas, identificação do dataset e versão/configuração do motor |
+
+Uma análise tem vários problemas; study_run tem várias análises através de study_run_id opcional em analysis. Screenshots ficarão em arquivos num volume local, com referências no banco. Falhas terão status e mensagem; score será nulo quando não houver avaliação válida, inclusive quando nenhum elemento puder ser avaliado. Zero não significará erro.
+
+## Lote e tempo
+
+O endpoint administrativo POST /api/studies importa CSV e chama AnalysisService para cada linha, sequencialmente. Assim, formulário e lote usam exatamente o mesmo scanner e Core. Falhas de URL/coleta são registradas sem interromper as próximas URLs; falha de persistência do lote pode interrompê-lo. O resultado pode ser consultado em JSON ou exportado em CSV, com aspas e neutralização de possíveis fórmulas. O dataset original, hash SHA-256, ambiente e checkpoints ficam salvos em study_run. [Formato, comandos e denominadores](docs/studies.md).
+
+O relógio monotônico System.nanoTime() começará antes de abrir o navegador e terminará depois de salvar o relatório e os artefatos. A diferença convertida em milissegundos será salva numa atualização final. Essa última atualização da duração fica fora do intervalo, explicitamente. Instant em UTC registrará datas. Um bloco finally encerrará a medição também nas falhas. StudyRun terá medição própria envolvendo todo o lote; seu tempo não é apenas a soma dos tempos das páginas.
+
+## Critérios e referências
+
+RgbColor representa canais inteiros 0–255 e aceita #RRGGBB. Transparência precisa ser composta com o fundo pelo scanner antes de chamar o Core.
+
+Luminância: linearização sRGB com limiar 0,04045; Y = 0,2126R + 0,7152G + 0,0722B. Contraste = (Y maior + 0,05)/(Y menor + 0,05). Texto normal: AA 4,5 e AAA 7. Texto grande: AA 3 e AAA 4,5; grande significa 24 CSS px ou 14 pt (18,666… CSS px) em negrito. Nenhum arredondamento é aplicado para aprovar/reprovar.
+
+Referências: [WCAG 2.2 — luminância relativa](https://www.w3.org/TR/WCAG22/#dfn-relative-luminance), [contraste mínimo](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html) e [contraste aprimorado](https://www.w3.org/TR/WCAG22/#contrast-enhanced).
+
+Simulações usam o [modelo de Machado, Oliveira e Fernandes (2009)](https://pubmed.ncbi.nlm.nih.gov/19834201/) em RGB linear, intensidade 1,0; a opção de tritanopia é uma aproximação com limitação explícita. Similaridade é uma heurística própria, separada das falhas WCAG. O score é a porcentagem arredondada de blocos avaliáveis que passam em contraste AA, com nulo para cobertura zero. Fórmulas, coeficientes, referências e limitações estão em [metodologia](docs/methodology.md).
+
+## Riscos e limitações
+
+- Fundos com imagens, gradientes, transparência, sobreposição e filtros exigem cuidado; casos não resolvidos devem ser marcados como não avaliáveis.
+- iframes, shadow DOM, pseudo-elementos e texto em canvas podem escapar da coleta. A cobertura será documentada.
+- Consentimento de cookies, conteúdo dinâmico, bloqueios de bots e timeouts mudam os resultados. Viewport, navegador, timeout e versão do algoritmo precisam ser registrados.
+- URL é entrada não confiável. Validaremos protocolos HTTP/HTTPS, DNS/IP públicos e redirects; requisições secundárias também precisam de bloqueio de acesso a redes locais. Uma checagem textual de localhost é insuficiente.
+- Simulações aproximam a percepção; semelhança entre cores não comprova perda de informação. O detector não certifica acessibilidade completa.
+- Screenshots consomem disco. Navegadores precisam ser fechados em finally e limites de execução aplicados.
+
+## Validação e estudo
+
+O protocolo executável está em [docs/validation.md](docs/validation.md). O avaliador distingue detecção de falhas no inventário humano e classificação apenas dos textos resolvidos, informa perdas/cobertura e não preenche rótulos automaticamente. Fixtures verificam o cálculo, sem validar empiricamente o detector.
+
+Verificação da estrutura da Fase 8 em 06/10/2026: 7 testes novos passaram; build Maven e geração do JAR sem erros. Nenhuma revisão humana ou validação com websites reais foi declarada concluída.
+
+Antes do estudo, selecionar pequena amostra e rotular manualmente elementos de texto, cores, contexto e contraste, com protocolo fixo. Comparar a mesma unidade de avaliação com o scanner, incluindo elementos não detectados. Calcular TP, FP, FN, precision, recall e F1 apenas com rótulos reais e denominadores válidos. Heurísticas de diferenciação precisam de protocolo separado; não reutilizar rótulos de contraste para validá-las.
+
+A seleção das aproximadamente 100 URLs, categorias e exclusões será definida e aprovada antes da coleta. Registrar hash do CSV, data, ambiente, viewport, versões, timeouts e falhas. Estatísticas de score usarão apenas análises válidas; falhas serão reportadas separadamente. Websites mudam: resultados descrevem o estado observado no momento da coleta.
+
+## Study Results
+
+O estudo ainda não foi executado. Dataset, processamento, acessibilidade, validação e conclusões serão publicados somente depois da coleta real.
+
+## Screenshots
+
+Captura real da interface na Fase 5, mostrando o foco visível e a validação de URL inválida. Não é um resultado de análise de website nem uma captura do estudo.
+
+![Home com validação de URL inválida](docs/screenshots/home-validacao.jpg)
+
+Captura real da Fase 6: histórico com a API indisponível, sem registros ou métricas inventados.
+
+![Histórico com a API indisponível](docs/screenshots/historico-api-indisponivel.jpg)
+
+## Fases
+
+1. Fundação/Core: estrutura, cores, luminância, contraste e testes.
+2. Backend: Spring, DTOs, PostgreSQL, persistência, API e testes.
+3. Scanner: Playwright, estilos, screenshot, bounding boxes, tempo e fixtures.
+4. Motor: simulações, similaridade, sugestões, score e testes matemáticos.
+5. Front-End: Home, relatório, comparação e estados acessíveis.
+6. Histórico: relatórios anteriores e evolução simples por URL.
+7. Lote: CSV, mesmo serviço, duração, falhas e exportação.
+8. Validação: protocolo manual e métricas a partir de rótulos reais.
+9. Docker: aplicação completa local, portas, variáveis, logs e verificação integrada.
+10. GitHub: Git, CI, documentação e screenshots reais.
+11. Estudo: dataset aprovado, coleta, exportação, estatísticas e conclusões reais.
+
+## API planejada
+
+POST /api/analyses; GET /api/analyses/{id}; GET /api/analyses; GET /api/analyses/by-url. POST executa análise síncrona. GET /api/analyses/{id}/capture retorna a coleta; GET /api/analyses/{id}/report retorna o relatório; GET /api/analyses/{id}/screenshot retorna PNG original ou simulado através do parâmetro simulation. Contratos e exemplos estão em backend/README.md.
+
+## Docker e CI
+
+Fase 9 preparada: Dockerfiles, Nginx, Compose com Front-End/API/PostgreSQL, volumes e healthchecks. Após preparar `.env` e iniciar Docker Desktop com containers Linux, execute `docker compose up --build`. A interface usa localhost:3000; API, localhost:8080. [Guia completo: execução, portas, logs, persistência e recriação](docs/docker.md).
+
+Verificação em 06/10/2026: os 7 testes AnalysisApiTest passaram e o JAR foi gerado, incluindo a nova prontidão API/banco com H2. Docker não foi encontrado no terminal nem nos locais padrão do Desktop. Build das imagens e fluxo integrado com PostgreSQL/Chromium Linux permanecem pendentes; não há execução em containers declarada concluída.
+Fase 10: Git local inicializado na branch main e workflow GitHub Actions preparado para lint, testes e build do Front-End e `mvn verify` para Backend/Core, incluindo instalação do Chromium Linux. [Guia de Git, commits, publicação e CI](docs/github.md). A execução remota depende da definição e publicação do repositório GitHub; ainda não foi confirmada.
+
+Verificação local da Fase 10 em 06/10/2026: 100 testes Java passaram (27 Core e 73 Backend), com JAR executável gerado. Os 24 testes do Front-End, lint e build passaram. O scanner foi testado com Chromium em fixtures locais no Windows; H2 continua restrito aos testes. PostgreSQL/containers, runner Linux e revisão humana ainda exigem suas verificações próprias.
+
+## Roadmap posterior à V1
+
+Upload de screenshot, múltiplas páginas, autenticação, API pública e keys, rate limiting, integração com PRs, quality gate, comparação antes/depois, PDF e outros critérios de acessibilidade.
+
+## Para explicar numa entrevista
+
+Um record Java representa dados imutáveis, com validação no construtor. O módulo Core pode ser testado sem servidor ou banco porque concentra funções determinísticas. Maven organiza dependências e executa compilação/testes; verify também empacota o JAR. Testes com preto/branco e valores conhecidos verificam a matemática, enquanto casos nos limites evitam aprovações incorretas.

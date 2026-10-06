@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  java:
+    name: Java — Core e API
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.playwright
+      PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@v6.0.1
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+          cache-dependency-path: '**/pom.xml'
+      - name: Preparar módulos para instalar Chromium
+        run: mvn -B -ntp -DskipTests install
+      - name: Instalar Chromium e dependências Linux
+        run: >-
+          mvn -B -ntp -f backend/pom.xml exec:java
+          -Dexec.mainClass=com.microsoft.playwright.CLI
+          '-Dexec.args=install --with-deps chromium'
+      - name: Testar e empacotar Core e API
+        run: mvn -B -ntp verify
+
+  frontend:
+    name: Front-End — lint, testes e build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24.18.0'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Instalar dependências pelo lockfile
+        run: npm ci
+      - name: Verificar lint
+        run: npm run lint
+      - name: Executar testes
+        run: npm test
+      - name: Verificar TypeScript e gerar build
+        run: npm run build

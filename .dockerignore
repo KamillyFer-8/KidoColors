@@ -1,0 +1,16 @@
+.git
+.env
+.env.*
+**/node_modules
+**/target
+**/dist
+**/coverage
+.maven-cache
+.playwright
+storage
+results
+datasets
+docs
+.codex
+.agents
+**/*.log
