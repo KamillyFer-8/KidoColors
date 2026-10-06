@@ -161,6 +161,8 @@ Fase 10: Git local na branch main e repositório privado [KamillyFer-8/KidoColor
 
 Verificação local da Fase 10 em 06/10/2026: 100 testes Java passaram (27 Core e 73 Backend), com JAR executável gerado. Os 24 testes do Front-End, lint e build passaram. O scanner foi testado com Chromium em fixtures locais no Windows; H2 continua restrito aos testes. PostgreSQL/containers, runner Linux e revisão humana ainda exigem suas verificações próprias.
 
+A [primeira execução do CI no GitHub](https://github.com/KamillyFer-8/KidoColors/actions/runs/37548042414), sobre `2d618b3`, passou nos três jobs: Java, Front-End e Containers. As imagens foram construídas, os três serviços ficaram saudáveis e as consultas HTTP pelo Nginx confirmaram API/PostgreSQL e rotas da SPA. O scanner Linux foi testado no job Java com fixtures locais; uma análise real dentro do container, capturas e persistência após reinício ainda precisam de verificação. A validação humana e o estudo permanecem pendentes.
+
 ## Roadmap posterior à V1
 
 Upload de screenshot, múltiplas páginas, autenticação, API pública e keys, rate limiting, integração com PRs, quality gate, comparação antes/depois, PDF e outros critérios de acessibilidade.

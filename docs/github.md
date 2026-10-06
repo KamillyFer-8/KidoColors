@@ -18,7 +18,7 @@ Testes da API usam H2 e scanner simulado; testes próprios do scanner usam Chrom
 
 Essas consultas não renderizam React num navegador, não iniciam uma análise, não verificam a gravação de PNGs ou sua persistência após recriar containers. O CI não coleta websites do estudo nem executa revisão humana. As verificações complementares estão em [Docker](docker.md) e [validação](validation.md). Um CI verde não certifica acessibilidade nem eficácia do detector.
 
-O workflow tem permissão de leitura do código e não publica pacotes, imagens ou site. Não precisa de senha de banco, tokens próprios ou secrets. As versões das actions foram conferidas nas páginas oficiais: [checkout](https://github.com/actions/checkout/releases/tag/v7.0.1), [setup-java](https://github.com/actions/setup-java/releases/tag/v6.0.1), [setup-node](https://github.com/actions/setup-node/releases/tag/v7.0.0). A instalação segue a [documentação Playwright Java para CI](https://playwright.dev/java/docs/ci).
+O workflow tem permissão de leitura do código e não publica pacotes, imagens ou site. O banco isolado do job Containers usa uma senha identificada como descartável; não usa credenciais reais, tokens próprios ou secrets. As versões das actions foram conferidas nas páginas oficiais: [checkout](https://github.com/actions/checkout/releases/tag/v7.0.1), [setup-java](https://github.com/actions/setup-java/releases/tag/v6.0.1), [setup-node](https://github.com/actions/setup-node/releases/tag/v7.0.0). A instalação segue a [documentação Playwright Java para CI](https://playwright.dev/java/docs/ci).
 
 ## Comandos no terminal PowerShell do VS Code
 
@@ -52,7 +52,7 @@ git remote -v
 git push -u origin main
 ```
 
-O Git pode solicitar autenticação pelo navegador. Não coloque tokens no código, no `.env.example` ou no endereço do remoto. Se origin já existir, confira `git remote -v` antes de alterar qualquer configuração. Após o push, abra a aba Actions e confira os dois jobs e seus logs. Para uma alteração posterior:
+O Git pode solicitar autenticação pelo navegador. Não coloque tokens no código, no `.env.example` ou no endereço do remoto. Se origin já existir, confira `git remote -v` antes de alterar qualquer configuração. Após o push, abra a aba Actions e confira os três jobs e seus logs. Para uma alteração posterior:
 
 ```powershell
 git switch -c feat/minha-alteracao
@@ -69,5 +69,7 @@ Abra uma pull request para main. O CI compara a mudança pelo conjunto de testes
 A configuração de CI está preparada localmente. Em 06/10/2026, `mvn verify` passou com 100 testes (27 Core e 73 Backend), incluindo Chromium real sobre fixtures locais no Windows; o JAR foi gerado. Os 24 testes do front-end, lint, TypeScript e build passaram. Essas execuções locais não confirmam o comportamento do runner Linux ou do workflow remoto.
 
 O repositório privado [KamillyFer-8/KidoColors](https://github.com/KamillyFer-8/KidoColors) foi criado em 06/10/2026. A execução GitHub Actions deve ser conferida pela aba Actions; os resultados locais acima não são evidência de execução remota. Não use badge de sucesso antes de confirmar o workflow. Screenshots existentes em `docs/screenshots/` são capturas reais da interface com suas limitações descritas no README; não são resultados do estudo.
+
+A [primeira execução remota, 37548042414](https://github.com/KamillyFer-8/KidoColors/actions/runs/37548042414), sobre o commit `2d618b3`, concluiu com sucesso os três jobs em 06/10/2026. O runner Linux verificou Java/Core/API e front-end, construiu as imagens e iniciou os três containers saudáveis. O script HTTP passou por Nginx, API e PostgreSQL; o container confirmou Java 21.0.12.1. Isso não inclui análise de URL pública, renderização no navegador, PNGs ou persistência após reinício.
 
 Antes da Fase 11, ainda é necessário verificar a aplicação com PostgreSQL/containers, executar o protocolo humano de validação e aprovar a seleção do dataset. O estudo não foi iniciado.

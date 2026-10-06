@@ -94,6 +94,23 @@ Falha ao conectar ao Docker exige iniciar o Desktop e conferir o mecanismo Linux
 
 Referências: [Docker Compose — ordem e prontidão](https://docs.docker.com/compose/how-tos/startup-order/), [Playwright Java em Docker](https://playwright.dev/java/docs/docker).
 
+## Docker Desktop instalado por usuário no Windows
+
+Neste computador, o atalho indicado pelo usuário apontou para `%LOCALAPPDATA%\Programs\DockerDesktop\Docker Desktop.exe`. O CLI estava instalado, mas não no PATH do terminal. Para disponibilizá-lo somente no terminal atual do VS Code, se essa pasta existir:
+
+```powershell
+$dockerBinPath = Join-Path $env:LOCALAPPDATA 'Programs\DockerDesktop\resources\bin'
+if (Test-Path (Join-Path $dockerBinPath 'docker.exe')) {
+    $env:Path = "$dockerBinPath;$env:Path"
+}
+docker compose version
+docker info
+```
+
+Abra Docker Desktop e confirme que o mecanismo Linux está em execução antes de iniciar o projeto. A verificação local encontrou Compose 5.4.0, mas o mecanismo `dockerDesktopLinuxEngine` não ficou disponível após iniciar o Desktop. O diagnóstico local depende da mensagem apresentada pelo aplicativo; nenhum ajuste de WSL, reinstalação ou exclusão de dados foi executado.
+
 ## Evidência nesta implementação — 06/10/2026
 
 Os 7 testes `AnalysisApiTest` passaram, incluindo a verificação de prontidão com uma consulta real ao H2 de teste; Maven gerou o JAR executável com BUILD SUCCESS. Docker não foi encontrado no PATH nem nos locais padrão do Desktop. Portanto, `docker compose config`, build das imagens, inicialização dos containers, coleta em Chromium Linux e persistência em PostgreSQL ainda não foram verificados. A configuração está preparada; a validação integrada da Fase 9 permanece pendente.
+
+Verificação posterior no GitHub: a [execução 37548042414](https://github.com/KamillyFer-8/KidoColors/actions/runs/37548042414), commit `2d618b3`, passou nos três jobs. O Compose foi validado, ambas as imagens foram construídas e Nginx/API/PostgreSQL ficaram saudáveis. A API executou a consulta de prontidão no PostgreSQL real, e o histórico/rotas foram consultados pelo Nginx. A JVM do container confirmou Java 21.0.12.1. Permanecem pendentes a análise real pelo Chromium dentro do container, renderização da interface, gravação de capturas e preservação de registros/PNGs após reinício. A instalação local do Desktop foi localizada posteriormente, conforme a seção acima.
