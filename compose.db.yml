@@ -1,4 +1,5 @@
-# Banco para desenvolvimento com Java/Vite no host. Para a aplicação completa use docker-compose.yml.
+# Banco local opcional para Java/Vite no host; o desenvolvimento com PostgreSQL hospedado não usa este arquivo.
+# Use --env-file .env.docker. Para a aplicação completa use docker-compose.yml.
 name: kidocolors-dev-db
 services:
   postgres:
@@ -6,7 +7,7 @@ services:
     environment:
       POSTGRES_DB: ${DB_NAME:-kidocolors}
       POSTGRES_USER: ${DB_USERNAME:-kidocolors}
-      POSTGRES_PASSWORD: ${DB_PASSWORD:?Defina DB_PASSWORD no arquivo .env}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?Defina DB_PASSWORD no arquivo .env.docker}
     ports:
       - "127.0.0.1:5432:5432"
     volumes:

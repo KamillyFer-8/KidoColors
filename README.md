@@ -47,7 +47,7 @@ Verificação da Fase 6 em 06/10/2026: 24 testes do Front-End passaram, lint e b
 
 Verificação da Fase 7 em 06/10/2026: Maven verify gerou o JAR executável com BUILD SUCCESS; 92 testes Java passaram (27 Core, 65 Backend), incluindo 14 de importação, métricas, persistência e exportação de lotes. Testes de integração usam H2 e scanner simulado, além dos testes existentes do scanner com Chromium e páginas locais. Nenhum CSV do estudo real foi processado; PostgreSQL real permanece pendente.
 
-## Estrutura final proposta
+## Estrutura atual
 
 ```text
 KidoColors/
@@ -104,7 +104,7 @@ O React apresenta formulário e relatório. O controller valida o DTO e chama An
 
 Uma aplicação Spring com organização por responsabilidade é suficiente. Não precisamos de microsserviços, filas ou outro servidor para o scanner.
 
-## Modelo do banco proposto
+## Modelo do banco
 
 | Tabela | Dados principais |
 |---|---|
@@ -112,13 +112,13 @@ Uma aplicação Spring com organização por responsabilidade é suficiente. Nã
 | accessibility_issue | UUID, analysis_id, tipo, severidade, mensagem, texto, cores originais/simuladas, razão e limiar de contraste, seletor, bounding box, simulação e sugestão |
 | study_run | UUID, nome, início/fim, duration_ms, total_urls, sucessos/falhas, identificação do dataset e versão/configuração do motor |
 
-Uma análise tem vários problemas; study_run tem várias análises através de study_run_id opcional em analysis. Screenshots ficarão em arquivos num volume local, com referências no banco. Falhas terão status e mensagem; score será nulo quando não houver avaliação válida, inclusive quando nenhum elemento puder ser avaliado. Zero não significará erro.
+Uma análise tem vários problemas; study_run tem várias análises através de study_run_id opcional em analysis. Screenshots ficam em arquivos locais ou no volume Docker, com referências no banco. Falhas têm status e mensagem; score é nulo quando não há avaliação válida, inclusive quando nenhum elemento pode ser avaliado. Zero não significa erro.
 
 ## Lote e tempo
 
 O endpoint administrativo POST /api/studies importa CSV e chama AnalysisService para cada linha, sequencialmente. Assim, formulário e lote usam exatamente o mesmo scanner e Core. Falhas de URL/coleta são registradas sem interromper as próximas URLs; falha de persistência do lote pode interrompê-lo. O resultado pode ser consultado em JSON ou exportado em CSV, com aspas e neutralização de possíveis fórmulas. O dataset original, hash SHA-256, ambiente e checkpoints ficam salvos em study_run. [Formato, comandos e denominadores](docs/studies.md).
 
-O relógio monotônico System.nanoTime() começará antes de abrir o navegador e terminará depois de salvar o relatório e os artefatos. A diferença convertida em milissegundos será salva numa atualização final. Essa última atualização da duração fica fora do intervalo, explicitamente. Instant em UTC registrará datas. Um bloco finally encerrará a medição também nas falhas. StudyRun terá medição própria envolvendo todo o lote; seu tempo não é apenas a soma dos tempos das páginas.
+O relógio monotônico System.nanoTime() começa antes de abrir o navegador e termina depois de salvar o relatório e os artefatos. A diferença convertida em milissegundos é salva numa atualização final. Essa última atualização da duração fica fora do intervalo, explicitamente. Instant em UTC registra datas. Um bloco finally encerra a medição também nas falhas. StudyRun tem medição própria envolvendo todo o lote; seu tempo não é apenas a soma dos tempos das páginas.
 
 ## Critérios e referências
 
@@ -135,7 +135,7 @@ Simulações usam o [modelo de Machado, Oliveira e Fernandes (2009)](https://pub
 - Fundos com imagens, gradientes, transparência, sobreposição e filtros exigem cuidado; casos não resolvidos devem ser marcados como não avaliáveis.
 - iframes, shadow DOM, pseudo-elementos e texto em canvas podem escapar da coleta. A cobertura será documentada.
 - Consentimento de cookies, conteúdo dinâmico, bloqueios de bots e timeouts mudam os resultados. Viewport, navegador, timeout e versão do algoritmo precisam ser registrados.
-- URL é entrada não confiável. Validaremos protocolos HTTP/HTTPS, DNS/IP públicos e redirects; requisições secundárias também precisam de bloqueio de acesso a redes locais. Uma checagem textual de localhost é insuficiente.
+- URL é entrada não confiável. O scanner valida protocolos HTTP/HTTPS e DNS/IP públicos, bloqueia redirects e verifica requisições secundárias para impedir acesso a redes locais. As limitações dessa proteção estão documentadas em [metodologia](docs/methodology.md). Uma checagem textual de localhost é insuficiente.
 - Simulações aproximam a percepção; semelhança entre cores não comprova perda de informação. O detector não certifica acessibilidade completa.
 - Screenshots consomem disco. Navegadores precisam ser fechados em finally e limites de execução aplicados.
 
@@ -177,7 +177,7 @@ Captura real da Fase 6: histórico com a API indisponível, sem registros ou mé
 10. GitHub: Git, CI, documentação e screenshots reais.
 11. Estudo: dataset aprovado, coleta, exportação, estatísticas e conclusões reais.
 
-## API planejada
+## API implementada
 
 POST /api/analyses; GET /api/analyses/{id}; GET /api/analyses; GET /api/analyses/by-url. POST executa análise síncrona. GET /api/analyses/{id}/capture retorna a coleta; GET /api/analyses/{id}/report retorna o relatório; GET /api/analyses/{id}/screenshot retorna PNG original ou simulado através do parâmetro simulation. Contratos e exemplos estão em backend/README.md.
 
@@ -194,6 +194,8 @@ Fase 10: Git local na branch main e repositório público [KamillyFer-8/KidoColo
 Verificação local da Fase 10 em 06/10/2026: 100 testes Java passaram (27 Core e 73 Backend), com JAR executável gerado. Os 24 testes do Front-End, lint e build passaram. O scanner foi testado com Chromium em fixtures locais no Windows; H2 continua restrito aos testes. PostgreSQL/containers, runner Linux e revisão humana ainda exigem suas verificações próprias.
 
 A [primeira execução do CI no GitHub](https://github.com/KamillyFer-8/KidoColors/actions/runs/37548042414), sobre `2d618b3`, passou nos três jobs: Java, Front-End e Containers. As imagens foram construídas, os três serviços ficaram saudáveis e as consultas HTTP pelo Nginx confirmaram API/PostgreSQL e rotas da SPA. O scanner Linux foi testado no job Java com fixtures locais; uma análise real dentro do container, capturas e persistência após reinício ainda precisam de verificação. A validação humana e o estudo permanecem pendentes.
+
+A [execução após tornar Docker opcional](https://github.com/KamillyFer-8/KidoColors/actions/runs/37617334795), sobre `822ad57`, também passou nos três jobs. Isso confirma que a alternativa Docker continuou construindo e iniciando os serviços no GitHub após a mudança, sem exigir Docker no notebook.
 
 ## Roadmap posterior à V1
 
