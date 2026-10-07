@@ -1,0 +1,43 @@
+{
+  "validated_at_utc": "2026-10-07T15:15:23.917399+00:00",
+  "protocol": "scanner-v2",
+  "status": "LOCAL_VALIDATION_PASSED_AWAITING_REVIEW",
+  "run2_executed": false,
+  "real_dataset_urls_used_for_calibration": false,
+  "core_tests": {
+    "tests": 27,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "backend_tests": {
+    "tests": 77,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "frontend_tests": 24,
+  "maven_verify": "passed (-Pscanner-v2)",
+  "frontend_lint": "passed",
+  "frontend_build": "passed",
+  "run1_preservation": {
+    "protected_files_sha256_unchanged": 454,
+    "original_manifest_artifacts_verified": 436,
+    "dataset_sha256": "ce305c5a482ad103501f462d78821694a00061fc2fb8f55fe789bc5f2f8e8900",
+    "preserved_backend_jar_sha256": "af0b7b66b58324e275b096eed10115e489ff97ea76cbc82f884b523353e2bb4a"
+  },
+  "v2_build": {
+    "path": "backend/target-v2/backend-0.1.0-SNAPSHOT.jar",
+    "sha256": "9967dbc8e420964ceda3b69238d569b7f1cc47938a470177fa54f6d3b613f409"
+  },
+  "configuration": {
+    "timeout_ms": 30000,
+    "readiness_timeout_ms": 5000,
+    "stability_ms": 500,
+    "readiness_sample_ms": 100,
+    "max_redirects": 5,
+    "max_coverage_height_px": 12000,
+    "coverage_width_px": 1280,
+    "max_elements": 2000
+  }
+}

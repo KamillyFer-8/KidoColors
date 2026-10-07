@@ -1,0 +1,18 @@
+{
+  "code_revision": "9fff8a80a79a3f7d411220f85bbf670eb8b161c5",
+  "selection_sha256": "ce305c5a482ad103501f462d78821694a00061fc2fb8f55fe789bc5f2f8e8900",
+  "import_sha256": "17ba95f31e0431bcde739e65dd35036d0265c0750a7b187d85ba9505f46668a2",
+  "jar_sha256": "af0b7b66b58324e275b096eed10115e489ff97ea76cbc82f884b523353e2bb4a",
+  "category_counts": {
+    "Educação": 20,
+    "Notícias e conteúdo": 20,
+    "E-commerce": 20,
+    "Serviços": 20,
+    "Empresas e instituições": 20
+  },
+  "dataset_rows": 100,
+  "post_attempts": 1,
+  "api_base": "http://127.0.0.1:8080",
+  "created_at_utc": "2026-10-07T13:37:02.346133+00:00",
+  "note": "Original eight-column selection preserved; only four columns projected for the existing importer. No export implementation changed."
+}

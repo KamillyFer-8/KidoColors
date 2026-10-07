@@ -1,0 +1,101 @@
+﻿id,site,url,categoria
+KC-001,Magazine Luiza,https://www.magazineluiza.com.br/,E-commerce
+KC-002,Lupo,https://www.lupo.com.br/,E-commerce
+KC-003,Americanas,https://www.americanas.com.br/,E-commerce
+KC-004,TerabyteShop,https://www.terabyteshop.com.br/,E-commerce
+KC-005,Tramontina Store,https://www.tramontina.com.br/,E-commerce
+KC-006,Natura,https://www.natura.com.br/,E-commerce
+KC-007,Leroy Merlin Brasil,https://www.leroymerlin.com.br/,E-commerce
+KC-008,MadeiraMadeira,https://www.madeiramadeira.com.br/,E-commerce
+KC-009,Cobasi,https://www.cobasi.com.br/,E-commerce
+KC-010,Le Postiche,https://www.lepostiche.com.br/,E-commerce
+KC-011,Centauro,https://www.centauro.com.br/,E-commerce
+KC-012,Lojas Renner,https://www.lojasrenner.com.br/,E-commerce
+KC-013,C&A Brasil,https://www.cea.com.br/,E-commerce
+KC-014,Bagaggio,https://www.bagaggio.com.br/,E-commerce
+KC-015,Havan,https://www.havan.com.br/,E-commerce
+KC-016,Drogaria Araujo,https://www.araujo.com.br/,E-commerce
+KC-017,Panvel,https://www.panvel.com/,E-commerce
+KC-018,Livraria da Travessa,https://www.travessa.com.br/,E-commerce
+KC-019,Kalunga,https://www.kalunga.com.br/,E-commerce
+KC-020,Wine,https://www.wine.com.br/,E-commerce
+KC-021,Universidade de São Paulo,https://www5.usp.br/,Educação
+KC-022,Universidade Estadual de Campinas,https://www.unicamp.br/,Educação
+KC-023,Universidade Federal do Rio de Janeiro,https://ufrj.br/,Educação
+KC-024,Universidade Federal de Minas Gerais,https://www.ufmg.br/,Educação
+KC-025,Universidade Federal do Rio Grande do Sul,https://www.ufrgs.br/,Educação
+KC-026,Universidade Federal da Bahia,https://ufba.br/,Educação
+KC-027,Universidade Federal do Rio Grande do Norte,https://www.ufrn.br/,Educação
+KC-028,Universidade Federal do Ceará,https://www.ufc.br/pt,Educação
+KC-029,Universidade Federal do Pará,https://ufpa.br/,Educação
+KC-030,Universidade de Brasília,https://www.unb.br/,Educação
+KC-031,PUC-Rio,https://www.puc-rio.br/,Educação
+KC-032,Universidade Presbiteriana Mackenzie,https://www.mackenzie.br/,Educação
+KC-033,FECAP,https://www.fecap.br/,Educação
+KC-034,Universidade Cruzeiro do Sul,https://www.cruzeirodosul.edu.br/,Educação
+KC-035,ESPM,https://www.espm.br/,Educação
+KC-036,Instituto Federal do Ceará,https://portal.ifce.edu.br/,Educação
+KC-037,Universidade Tecnológica Federal do Paraná,https://www.utfpr.edu.br/,Educação
+KC-038,Fatec São Paulo,https://www.fatecsp.br/,Educação
+KC-039,Colégio Santa Cruz de Araguaína,https://www.colegiosantacruz.g12.br/,Educação
+KC-040,Senac São Paulo,https://www.sp.senac.br/,Educação
+KC-041,g1,https://g1.globo.com/,Notícias e conteúdo
+KC-042,Folha de S.Paulo,https://www.folha.uol.com.br/,Notícias e conteúdo
+KC-043,Estadão,https://www.estadao.com.br/,Notícias e conteúdo
+KC-044,BBC News Brasil,https://www.bbc.com/portuguese,Notícias e conteúdo
+KC-045,DW Brasil,https://www.dw.com/pt-br/not%C3%ADcias/s-7111,Notícias e conteúdo
+KC-046,Agência Brasil,https://agenciabrasil.ebc.com.br/,Notícias e conteúdo
+KC-047,O TEMPO,https://www.otempo.com.br/,Notícias e conteúdo
+KC-048,Agência Pública,https://apublica.org/,Notícias e conteúdo
+KC-049,Aos Fatos,https://www.aosfatos.org/,Notícias e conteúdo
+KC-050,Congresso em Foco,https://www.congressoemfoco.com.br/,Notícias e conteúdo
+KC-051,Poder360,https://www.poder360.com.br/,Notícias e conteúdo
+KC-052,Jornal Opção,https://www.jornalopcao.com.br/,Notícias e conteúdo
+KC-053,Intercept Brasil,https://www.intercept.com.br/,Notícias e conteúdo
+KC-054,Brasil de Fato,https://www.brasildefato.com.br/,Notícias e conteúdo
+KC-055,CartaCapital,https://www.cartacapital.com.br/,Notícias e conteúdo
+KC-056,Jornal do Comércio (RS),https://www.jornaldocomercio.com/,Notícias e conteúdo
+KC-057,((o))eco,https://oeco.org.br/,Notícias e conteúdo
+KC-058,Opera Mundi,https://operamundi.uol.com.br/,Notícias e conteúdo
+KC-059,Diário do Nordeste,https://diariodonordeste.verdesmares.com.br/,Notícias e conteúdo
+KC-060,Correio Braziliense,https://www.correiobraziliense.com.br/,Notícias e conteúdo
+KC-061,Omie,https://www.omie.com.br/,Serviços
+KC-062,Sabesp,https://www.sabesp.com.br/,Serviços
+KC-063,Itaú,https://www.itau.com.br/,Serviços
+KC-064,Cemig,https://www.cemig.com.br/,Serviços
+KC-065,Santander Brasil,https://www.santander.com.br/,Serviços
+KC-066,Nubank,https://nubank.com.br/,Serviços
+KC-067,Banco Inter,https://inter.co/,Serviços
+KC-068,Vivo,https://vivo.com.br/para-voce,Serviços
+KC-069,Claro,https://www.claro.com.br/,Serviços
+KC-070,TIM Brasil,https://www.tim.com.br/rj,Serviços
+KC-071,LATAM Brasil,https://www.latamairlines.com/br/pt,Serviços
+KC-072,GOL,https://www.voegol.com.br/,Serviços
+KC-073,Neoenergia,https://www.neoenergia.com/,Serviços
+KC-074,Correios,https://www.correios.com.br/,Serviços
+KC-075,Localiza,https://www.localiza.com/brasil/pt-br,Serviços
+KC-076,Movida,https://www.movida.com.br/,Serviços
+KC-077,Sanepar,https://www.sanepar.com.br/,Serviços
+KC-078,Unimed do Brasil,https://www.unimed.coop.br/site/,Serviços
+KC-079,Serasa,https://www.serasa.com.br/,Serviços
+KC-080,Conta Azul,https://contaazul.com/,Serviços
+KC-081,Petrobras,https://petrobras.com.br/,Empresas e instituições
+KC-082,Vale,https://vale.com/pt,Empresas e instituições
+KC-083,Embraer,https://www.embraer.com/pt/,Empresas e instituições
+KC-084,BNDES,https://www.bndes.gov.br/wps/portal/site/home,Empresas e instituições
+KC-085,Randoncorp,https://www.randoncorp.com/pt/,Empresas e instituições
+KC-086,Suzano,https://www.suzano.com.br/,Empresas e instituições
+KC-087,Klabin,https://klabin.com.br/,Empresas e instituições
+KC-088,JBS,https://jbs.com.br/,Empresas e instituições
+KC-089,Tupy,https://www.tupy.com.br/,Empresas e instituições
+KC-090,Votorantim,https://www.votorantim.com.br/,Empresas e instituições
+KC-091,TOTVS,https://www.totvs.com/,Empresas e instituições
+KC-092,Stefanini,https://pages.stefanini.com/pt-br,Empresas e instituições
+KC-093,Bosch Brasil,https://www.bosch.com.br/,Empresas e instituições
+KC-094,Siemens Brasil,https://www.siemens.com/pt-br/,Empresas e instituições
+KC-095,IBGE,https://www.ibge.gov.br/,Empresas e instituições
+KC-096,INPE,https://www.gov.br/inpe/pt-br,Empresas e instituições
+KC-097,INPA,https://www.gov.br/inpa/pt-br,Empresas e instituições
+KC-098,Embrapa,https://www.embrapa.br/,Empresas e instituições
+KC-099,Instituto Butantan,https://butantan.gov.br/,Empresas e instituições
+KC-100,WWF-Brasil,https://www.wwf.org.br/,Empresas e instituições

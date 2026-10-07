@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR"><meta charset="UTF-8"><title>Fixture exclusiva de teste</title>
+<style>
+body { margin: 20px; background: white; font: 16px Arial; }
+#good { color: #000000; background: #ffffff; }
+#bad { color: #777777; background: #ffffff; }
+#hidden { display: none; }
+#transparent { color: rgba(0,0,0,.5); background: transparent; }
+#gradient { background: linear-gradient(white, black); }
+#opacity { opacity: .5; }
+#inherited { background: #112233; }
+</style>
+<body>
+<p id="good">Contraste adequado</p>
+<p id="bad">Contraste inadequado</p>
+<p id="hidden">Não deve ser coletado</p>
+<div id="inherited"><span id="child" style="color:white">Fundo herdado</span></div>
+<p id="transparent">Texto transparente</p>
+<p id="gradient">Fundo não resolvido</p>
+<p id="opacity">Opacidade não resolvida</p>
+<p id="nested">Texto direto <strong id="bold">texto aninhado</strong></p>
+</body></html>

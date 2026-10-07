@@ -1,0 +1,21 @@
+{
+  "configuration" : {
+    "scannerProtocol" : "scanner-v2",
+    "navigationWaitUntil" : "DOMCONTENTLOADED",
+    "timeoutMs" : 30000,
+    "readinessTimeoutMs" : 5000,
+    "settleMs" : 500,
+    "maxPageHeight" : 12000,
+    "maxElements" : 2000,
+    "viewportWidth" : 1280,
+    "viewportHeight" : 720,
+    "maxRedirects" : 5
+  },
+  "database_product" : "PostgreSQL",
+  "supabase_host_verified" : true,
+  "existing_run2_count" : 0,
+  "browser_version" : "153.0.8010.12",
+  "capture_storage_separate" : true,
+  "active_profiles" : [ "default" ],
+  "ready_at_utc" : "2026-10-07T17:06:24.082480600Z"
+}

@@ -1,0 +1,3122 @@
+[
+  {
+    "filename": "0be4ccc8-63ba-4368-b56f-cd44e048ccb1.png",
+    "width": 1280,
+    "height": 7744,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7744
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "0ddf8261-b668-40e1-9d59-349d9d812772-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 7950,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7950
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "0ddf8261-b668-40e1-9d59-349d9d812772-PROTANOPIA.png",
+    "width": 1280,
+    "height": 7950,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7950
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "0ddf8261-b668-40e1-9d59-349d9d812772-TRITANOPIA.png",
+    "width": 1280,
+    "height": 7950,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7950
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "0ddf8261-b668-40e1-9d59-349d9d812772.png",
+    "width": 1280,
+    "height": 7950,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7950
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "10ce8b79-cb6d-46bf-974f-e783ce73085d-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 9849,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      9849
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "10ce8b79-cb6d-46bf-974f-e783ce73085d-PROTANOPIA.png",
+    "width": 1280,
+    "height": 9849,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      9849
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "10ce8b79-cb6d-46bf-974f-e783ce73085d-TRITANOPIA.png",
+    "width": 1280,
+    "height": 9849,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      9849
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "10ce8b79-cb6d-46bf-974f-e783ce73085d.png",
+    "width": 1280,
+    "height": 9849,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      9849
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "13d966db-6524-4ea1-a328-430168877b20-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 5407,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5407
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "13d966db-6524-4ea1-a328-430168877b20-PROTANOPIA.png",
+    "width": 1280,
+    "height": 5407,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5407
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "13d966db-6524-4ea1-a328-430168877b20-TRITANOPIA.png",
+    "width": 1280,
+    "height": 5407,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5407
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "13d966db-6524-4ea1-a328-430168877b20.png",
+    "width": 1280,
+    "height": 5407,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5407
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "160e58bb-13f0-4e69-83f3-9b623284e5fb-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 6549,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6549
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "160e58bb-13f0-4e69-83f3-9b623284e5fb-PROTANOPIA.png",
+    "width": 1280,
+    "height": 6549,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6549
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "160e58bb-13f0-4e69-83f3-9b623284e5fb-TRITANOPIA.png",
+    "width": 1280,
+    "height": 6549,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6549
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "160e58bb-13f0-4e69-83f3-9b623284e5fb.png",
+    "width": 1280,
+    "height": 6549,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6549
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "183dba95-f143-49b4-a74f-462cc278d430.png",
+    "width": 1280,
+    "height": 4391,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4391
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "1a619e89-d9de-4878-86e8-d5682ece72e3.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "1ac75209-dbae-4700-86fe-4cca7f0ea36c-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 4358,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4358
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "1ac75209-dbae-4700-86fe-4cca7f0ea36c-PROTANOPIA.png",
+    "width": 1280,
+    "height": 4358,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4358
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "1ac75209-dbae-4700-86fe-4cca7f0ea36c-TRITANOPIA.png",
+    "width": 1280,
+    "height": 4358,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4358
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "1ac75209-dbae-4700-86fe-4cca7f0ea36c.png",
+    "width": 1280,
+    "height": 4358,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4358
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "1c1fe256-62e7-4790-b05d-0bece97c4634-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 5746,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5746
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "1c1fe256-62e7-4790-b05d-0bece97c4634-PROTANOPIA.png",
+    "width": 1280,
+    "height": 5746,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5746
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "1c1fe256-62e7-4790-b05d-0bece97c4634-TRITANOPIA.png",
+    "width": 1280,
+    "height": 5746,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5746
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "1c1fe256-62e7-4790-b05d-0bece97c4634.png",
+    "width": 1280,
+    "height": 5746,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5746
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "1daa361f-6ea2-4c8c-b177-8fd77ec1c87c-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 7455,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7455
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "1daa361f-6ea2-4c8c-b177-8fd77ec1c87c-PROTANOPIA.png",
+    "width": 1280,
+    "height": 7455,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7455
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "1daa361f-6ea2-4c8c-b177-8fd77ec1c87c-TRITANOPIA.png",
+    "width": 1280,
+    "height": 7455,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7455
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "1daa361f-6ea2-4c8c-b177-8fd77ec1c87c.png",
+    "width": 1280,
+    "height": 7455,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7455
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "1f833d36-70eb-4598-8de5-f1210488e1c9-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 4963,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4963
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "1f833d36-70eb-4598-8de5-f1210488e1c9-PROTANOPIA.png",
+    "width": 1280,
+    "height": 4963,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4963
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "1f833d36-70eb-4598-8de5-f1210488e1c9-TRITANOPIA.png",
+    "width": 1280,
+    "height": 4963,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4963
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "1f833d36-70eb-4598-8de5-f1210488e1c9.png",
+    "width": 1280,
+    "height": 4963,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4963
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "217e34b5-743c-4ab0-931e-d398d96ed049-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "217e34b5-743c-4ab0-931e-d398d96ed049-PROTANOPIA.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "217e34b5-743c-4ab0-931e-d398d96ed049-TRITANOPIA.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "217e34b5-743c-4ab0-931e-d398d96ed049.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2386b319-c809-4a68-83b3-c751158f7ced-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 4546,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4546
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2386b319-c809-4a68-83b3-c751158f7ced-PROTANOPIA.png",
+    "width": 1280,
+    "height": 4546,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4546
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2386b319-c809-4a68-83b3-c751158f7ced-TRITANOPIA.png",
+    "width": 1280,
+    "height": 4546,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4546
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2386b319-c809-4a68-83b3-c751158f7ced.png",
+    "width": 1280,
+    "height": 4546,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4546
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "238d84f0-15eb-48d9-a7d5-2e5cf225f6dd-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 5627,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5627
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "238d84f0-15eb-48d9-a7d5-2e5cf225f6dd-PROTANOPIA.png",
+    "width": 1280,
+    "height": 5627,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5627
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "238d84f0-15eb-48d9-a7d5-2e5cf225f6dd-TRITANOPIA.png",
+    "width": 1280,
+    "height": 5627,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5627
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "238d84f0-15eb-48d9-a7d5-2e5cf225f6dd.png",
+    "width": 1280,
+    "height": 5627,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5627
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "27b6286b-f54b-4ca4-81a8-0f9ff9f9c993.png",
+    "width": 1280,
+    "height": 8138,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      8138
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2a45d218-3539-48df-90f1-1197cb9e7cca-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 4459,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4459
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2a45d218-3539-48df-90f1-1197cb9e7cca-PROTANOPIA.png",
+    "width": 1280,
+    "height": 4459,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4459
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2a45d218-3539-48df-90f1-1197cb9e7cca-TRITANOPIA.png",
+    "width": 1280,
+    "height": 4459,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4459
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2a45d218-3539-48df-90f1-1197cb9e7cca.png",
+    "width": 1280,
+    "height": 4459,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4459
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2beedb51-9e69-418e-a943-d00cf4891c94-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 2503,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2503
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2beedb51-9e69-418e-a943-d00cf4891c94-PROTANOPIA.png",
+    "width": 1280,
+    "height": 2503,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2503
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2beedb51-9e69-418e-a943-d00cf4891c94-TRITANOPIA.png",
+    "width": 1280,
+    "height": 2503,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2503
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2beedb51-9e69-418e-a943-d00cf4891c94.png",
+    "width": 1280,
+    "height": 2503,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2503
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2ca8fc20-6be9-4887-8b1f-c9fd2118e1fe-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 4232,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4232
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2ca8fc20-6be9-4887-8b1f-c9fd2118e1fe-PROTANOPIA.png",
+    "width": 1280,
+    "height": 4232,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4232
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2ca8fc20-6be9-4887-8b1f-c9fd2118e1fe-TRITANOPIA.png",
+    "width": 1280,
+    "height": 4232,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4232
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2ca8fc20-6be9-4887-8b1f-c9fd2118e1fe.png",
+    "width": 1280,
+    "height": 4232,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4232
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2d1c8566-620d-43e0-a35d-6019311d3abe-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 5724,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5724
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2d1c8566-620d-43e0-a35d-6019311d3abe-PROTANOPIA.png",
+    "width": 1280,
+    "height": 5724,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5724
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2d1c8566-620d-43e0-a35d-6019311d3abe-TRITANOPIA.png",
+    "width": 1280,
+    "height": 5724,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5724
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "2d1c8566-620d-43e0-a35d-6019311d3abe.png",
+    "width": 1280,
+    "height": 5724,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5724
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "30d67fdf-b56e-49ce-95c5-a8e8f1df954d-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 4829,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4829
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "30d67fdf-b56e-49ce-95c5-a8e8f1df954d-PROTANOPIA.png",
+    "width": 1280,
+    "height": 4829,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4829
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "30d67fdf-b56e-49ce-95c5-a8e8f1df954d-TRITANOPIA.png",
+    "width": 1280,
+    "height": 4829,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4829
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "30d67fdf-b56e-49ce-95c5-a8e8f1df954d.png",
+    "width": 1280,
+    "height": 4829,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4829
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "324fa2bf-d73c-495e-b639-54a8cfb22933-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 6330,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6330
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "324fa2bf-d73c-495e-b639-54a8cfb22933-PROTANOPIA.png",
+    "width": 1280,
+    "height": 6330,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6330
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "324fa2bf-d73c-495e-b639-54a8cfb22933-TRITANOPIA.png",
+    "width": 1280,
+    "height": 6330,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6330
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "324fa2bf-d73c-495e-b639-54a8cfb22933.png",
+    "width": 1280,
+    "height": 6330,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6330
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "3ccaa89c-0109-4b11-9486-107dc2fe3970-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 4517,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4517
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "3ccaa89c-0109-4b11-9486-107dc2fe3970-PROTANOPIA.png",
+    "width": 1280,
+    "height": 4517,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4517
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "3ccaa89c-0109-4b11-9486-107dc2fe3970-TRITANOPIA.png",
+    "width": 1280,
+    "height": 4517,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4517
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "3ccaa89c-0109-4b11-9486-107dc2fe3970.png",
+    "width": 1280,
+    "height": 4517,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4517
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "3ec33c71-9996-4ca8-ac23-d882d3f5d4f3.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "3f2d1852-da64-4f00-8f85-a70e4936eb8d-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 2928,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2928
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "3f2d1852-da64-4f00-8f85-a70e4936eb8d-PROTANOPIA.png",
+    "width": 1280,
+    "height": 2928,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2928
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "3f2d1852-da64-4f00-8f85-a70e4936eb8d-TRITANOPIA.png",
+    "width": 1280,
+    "height": 2928,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2928
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "3f2d1852-da64-4f00-8f85-a70e4936eb8d.png",
+    "width": 1280,
+    "height": 2928,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2928
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "40c36e1e-4acf-4e09-a6cc-7165a4608a3a-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 9298,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      9298
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "40c36e1e-4acf-4e09-a6cc-7165a4608a3a-PROTANOPIA.png",
+    "width": 1280,
+    "height": 9298,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      9298
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "40c36e1e-4acf-4e09-a6cc-7165a4608a3a-TRITANOPIA.png",
+    "width": 1280,
+    "height": 9298,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      9298
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "40c36e1e-4acf-4e09-a6cc-7165a4608a3a.png",
+    "width": 1280,
+    "height": 9298,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      9298
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "41890696-fef2-48c4-bd38-2ac2a9a303a8-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 2926,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2926
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "41890696-fef2-48c4-bd38-2ac2a9a303a8-PROTANOPIA.png",
+    "width": 1280,
+    "height": 2926,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2926
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "41890696-fef2-48c4-bd38-2ac2a9a303a8-TRITANOPIA.png",
+    "width": 1280,
+    "height": 2926,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2926
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "41890696-fef2-48c4-bd38-2ac2a9a303a8.png",
+    "width": 1280,
+    "height": 2926,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2926
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "426c76bc-3aea-4a60-a459-65f618fa384f-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 5486,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5486
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "426c76bc-3aea-4a60-a459-65f618fa384f-PROTANOPIA.png",
+    "width": 1280,
+    "height": 5486,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5486
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "426c76bc-3aea-4a60-a459-65f618fa384f-TRITANOPIA.png",
+    "width": 1280,
+    "height": 5486,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5486
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "426c76bc-3aea-4a60-a459-65f618fa384f.png",
+    "width": 1280,
+    "height": 5486,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5486
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4769a501-4719-4da1-bd5b-82a918f33799-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4769a501-4719-4da1-bd5b-82a918f33799-PROTANOPIA.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4769a501-4719-4da1-bd5b-82a918f33799-TRITANOPIA.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4769a501-4719-4da1-bd5b-82a918f33799.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4a725d2c-a28c-4714-a463-efc0ee21f672-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 3812,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      3812
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4a725d2c-a28c-4714-a463-efc0ee21f672-PROTANOPIA.png",
+    "width": 1280,
+    "height": 3812,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      3812
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4a725d2c-a28c-4714-a463-efc0ee21f672-TRITANOPIA.png",
+    "width": 1280,
+    "height": 3812,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      3812
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4a725d2c-a28c-4714-a463-efc0ee21f672.png",
+    "width": 1280,
+    "height": 3812,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      3812
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4bb760f6-b382-44ef-95dc-4cabca60e588-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 5089,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5089
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4bb760f6-b382-44ef-95dc-4cabca60e588-PROTANOPIA.png",
+    "width": 1280,
+    "height": 5089,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5089
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4bb760f6-b382-44ef-95dc-4cabca60e588-TRITANOPIA.png",
+    "width": 1280,
+    "height": 5089,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5089
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4bb760f6-b382-44ef-95dc-4cabca60e588.png",
+    "width": 1280,
+    "height": 5089,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5089
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4d331576-acb0-4481-847b-b974b8b9443a-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 5275,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5275
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4d331576-acb0-4481-847b-b974b8b9443a-PROTANOPIA.png",
+    "width": 1280,
+    "height": 5275,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5275
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4d331576-acb0-4481-847b-b974b8b9443a-TRITANOPIA.png",
+    "width": 1280,
+    "height": 5275,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5275
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4d331576-acb0-4481-847b-b974b8b9443a.png",
+    "width": 1280,
+    "height": 5275,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5275
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4e230d6b-05c4-4ab9-bcf7-adbe01c10ef4-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 4401,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4401
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4e230d6b-05c4-4ab9-bcf7-adbe01c10ef4-PROTANOPIA.png",
+    "width": 1280,
+    "height": 4401,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4401
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4e230d6b-05c4-4ab9-bcf7-adbe01c10ef4-TRITANOPIA.png",
+    "width": 1280,
+    "height": 4401,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4401
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4e230d6b-05c4-4ab9-bcf7-adbe01c10ef4.png",
+    "width": 1280,
+    "height": 4401,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4401
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4f770e78-7f2a-442d-b869-66a21c5f7a03-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 8563,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      8563
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4f770e78-7f2a-442d-b869-66a21c5f7a03-PROTANOPIA.png",
+    "width": 1280,
+    "height": 8563,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      8563
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4f770e78-7f2a-442d-b869-66a21c5f7a03-TRITANOPIA.png",
+    "width": 1280,
+    "height": 8563,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      8563
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "4f770e78-7f2a-442d-b869-66a21c5f7a03.png",
+    "width": 1280,
+    "height": 8563,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      8563
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "500ba588-30c6-41ef-b56b-e70ce1c3e36c-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 2966,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2966
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "500ba588-30c6-41ef-b56b-e70ce1c3e36c-PROTANOPIA.png",
+    "width": 1280,
+    "height": 2966,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2966
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "500ba588-30c6-41ef-b56b-e70ce1c3e36c-TRITANOPIA.png",
+    "width": 1280,
+    "height": 2966,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2966
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "500ba588-30c6-41ef-b56b-e70ce1c3e36c.png",
+    "width": 1280,
+    "height": 2966,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2966
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5253c4de-7e88-4eaa-9a0b-1016b4e89b48-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 2994,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2994
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5253c4de-7e88-4eaa-9a0b-1016b4e89b48-PROTANOPIA.png",
+    "width": 1280,
+    "height": 2994,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2994
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5253c4de-7e88-4eaa-9a0b-1016b4e89b48-TRITANOPIA.png",
+    "width": 1280,
+    "height": 2994,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2994
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5253c4de-7e88-4eaa-9a0b-1016b4e89b48.png",
+    "width": 1280,
+    "height": 2994,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2994
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5515bac1-406d-4ff3-937a-53dde76b0be9-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 6010,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6010
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5515bac1-406d-4ff3-937a-53dde76b0be9-PROTANOPIA.png",
+    "width": 1280,
+    "height": 6010,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6010
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5515bac1-406d-4ff3-937a-53dde76b0be9-TRITANOPIA.png",
+    "width": 1280,
+    "height": 6010,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6010
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5515bac1-406d-4ff3-937a-53dde76b0be9.png",
+    "width": 1280,
+    "height": 6010,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6010
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "57686900-7ff5-4539-b96e-d291f53d3b5a-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 7101,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7101
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "57686900-7ff5-4539-b96e-d291f53d3b5a-PROTANOPIA.png",
+    "width": 1280,
+    "height": 7101,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7101
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "57686900-7ff5-4539-b96e-d291f53d3b5a-TRITANOPIA.png",
+    "width": 1280,
+    "height": 7101,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7101
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "57686900-7ff5-4539-b96e-d291f53d3b5a.png",
+    "width": 1280,
+    "height": 7101,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7101
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "585a99ca-65a9-4ed0-b4b0-cca662f41a2c-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "585a99ca-65a9-4ed0-b4b0-cca662f41a2c-PROTANOPIA.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "585a99ca-65a9-4ed0-b4b0-cca662f41a2c-TRITANOPIA.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "585a99ca-65a9-4ed0-b4b0-cca662f41a2c.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5a01a31d-eba7-4253-98b6-b9e5af5228d9-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 7377,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7377
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5a01a31d-eba7-4253-98b6-b9e5af5228d9-PROTANOPIA.png",
+    "width": 1280,
+    "height": 7377,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7377
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5a01a31d-eba7-4253-98b6-b9e5af5228d9-TRITANOPIA.png",
+    "width": 1280,
+    "height": 7377,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7377
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5a01a31d-eba7-4253-98b6-b9e5af5228d9.png",
+    "width": 1280,
+    "height": 7377,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7377
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5cd66056-1f52-411e-b4d4-376dcc2ddf4a-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 7207,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7207
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5cd66056-1f52-411e-b4d4-376dcc2ddf4a-PROTANOPIA.png",
+    "width": 1280,
+    "height": 7207,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7207
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5cd66056-1f52-411e-b4d4-376dcc2ddf4a-TRITANOPIA.png",
+    "width": 1280,
+    "height": 7207,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7207
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5cd66056-1f52-411e-b4d4-376dcc2ddf4a.png",
+    "width": 1280,
+    "height": 7207,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7207
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5e64cfac-1044-41b5-a4c4-fbfff922c4ad-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 8843,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      8843
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5e64cfac-1044-41b5-a4c4-fbfff922c4ad-PROTANOPIA.png",
+    "width": 1280,
+    "height": 8843,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      8843
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5e64cfac-1044-41b5-a4c4-fbfff922c4ad-TRITANOPIA.png",
+    "width": 1280,
+    "height": 8843,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      8843
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5e64cfac-1044-41b5-a4c4-fbfff922c4ad.png",
+    "width": 1280,
+    "height": 8843,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      8843
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "5e9a3653-7204-4519-9968-70347dd13c98.png",
+    "width": 1280,
+    "height": 6611,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6611
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "63f3ca5e-cf3f-4fd3-8963-3cc58de7028c.png",
+    "width": 1280,
+    "height": 5717,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5717
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "66b02bc2-d53e-4ccd-9bea-836060db1132-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 10780,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      10780
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "66b02bc2-d53e-4ccd-9bea-836060db1132-PROTANOPIA.png",
+    "width": 1280,
+    "height": 10780,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      10780
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "66b02bc2-d53e-4ccd-9bea-836060db1132-TRITANOPIA.png",
+    "width": 1280,
+    "height": 10780,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      10780
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "66b02bc2-d53e-4ccd-9bea-836060db1132.png",
+    "width": 1280,
+    "height": 10780,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      10780
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "68179ad0-ad12-4987-beb5-bdbb6e23a772.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "6daed385-6b82-4f7a-a6f0-0c3a33616b23-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 8249,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      8249
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "6daed385-6b82-4f7a-a6f0-0c3a33616b23-PROTANOPIA.png",
+    "width": 1280,
+    "height": 8249,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      8249
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "6daed385-6b82-4f7a-a6f0-0c3a33616b23-TRITANOPIA.png",
+    "width": 1280,
+    "height": 8249,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      8249
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "6daed385-6b82-4f7a-a6f0-0c3a33616b23.png",
+    "width": 1280,
+    "height": 8249,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      8249
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "6f7ba61c-8c1e-4707-9e8d-99ca8a96d698-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 2747,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2747
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "6f7ba61c-8c1e-4707-9e8d-99ca8a96d698-PROTANOPIA.png",
+    "width": 1280,
+    "height": 2747,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2747
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "6f7ba61c-8c1e-4707-9e8d-99ca8a96d698-TRITANOPIA.png",
+    "width": 1280,
+    "height": 2747,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2747
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "6f7ba61c-8c1e-4707-9e8d-99ca8a96d698.png",
+    "width": 1280,
+    "height": 2747,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2747
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "6f7cb6cc-dafb-4df8-a44b-ac6d807a3e97-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 5182,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5182
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "6f7cb6cc-dafb-4df8-a44b-ac6d807a3e97-PROTANOPIA.png",
+    "width": 1280,
+    "height": 5182,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5182
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "6f7cb6cc-dafb-4df8-a44b-ac6d807a3e97-TRITANOPIA.png",
+    "width": 1280,
+    "height": 5182,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5182
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "6f7cb6cc-dafb-4df8-a44b-ac6d807a3e97.png",
+    "width": 1280,
+    "height": 5182,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5182
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "84ff3404-3a41-4934-b40f-c464cae52bff-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 4479,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4479
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "84ff3404-3a41-4934-b40f-c464cae52bff-PROTANOPIA.png",
+    "width": 1280,
+    "height": 4479,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4479
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "84ff3404-3a41-4934-b40f-c464cae52bff-TRITANOPIA.png",
+    "width": 1280,
+    "height": 4479,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4479
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "84ff3404-3a41-4934-b40f-c464cae52bff.png",
+    "width": 1280,
+    "height": 4479,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4479
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "8690ad2f-b2aa-4a43-9c00-38fecfc33eaa-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 8470,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      8470
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "8690ad2f-b2aa-4a43-9c00-38fecfc33eaa-PROTANOPIA.png",
+    "width": 1280,
+    "height": 8470,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      8470
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "8690ad2f-b2aa-4a43-9c00-38fecfc33eaa-TRITANOPIA.png",
+    "width": 1280,
+    "height": 8470,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      8470
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "8690ad2f-b2aa-4a43-9c00-38fecfc33eaa.png",
+    "width": 1280,
+    "height": 8470,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      8470
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "889e0142-cad6-4657-b1da-5d17e4fc91d1-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 2851,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2851
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "889e0142-cad6-4657-b1da-5d17e4fc91d1-PROTANOPIA.png",
+    "width": 1280,
+    "height": 2851,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2851
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "889e0142-cad6-4657-b1da-5d17e4fc91d1-TRITANOPIA.png",
+    "width": 1280,
+    "height": 2851,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2851
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "889e0142-cad6-4657-b1da-5d17e4fc91d1.png",
+    "width": 1280,
+    "height": 2851,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2851
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "8af1f7bc-0a43-4e39-8e85-30379ad17eb9-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 5046,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5046
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "8af1f7bc-0a43-4e39-8e85-30379ad17eb9-PROTANOPIA.png",
+    "width": 1280,
+    "height": 5046,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5046
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "8af1f7bc-0a43-4e39-8e85-30379ad17eb9-TRITANOPIA.png",
+    "width": 1280,
+    "height": 5046,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5046
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "8af1f7bc-0a43-4e39-8e85-30379ad17eb9.png",
+    "width": 1280,
+    "height": 5046,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5046
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "8b6db1f7-e18a-439a-9661-5665ee631d72-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 7140,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7140
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "8b6db1f7-e18a-439a-9661-5665ee631d72-PROTANOPIA.png",
+    "width": 1280,
+    "height": 7140,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7140
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "8b6db1f7-e18a-439a-9661-5665ee631d72-TRITANOPIA.png",
+    "width": 1280,
+    "height": 7140,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7140
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "8b6db1f7-e18a-439a-9661-5665ee631d72.png",
+    "width": 1280,
+    "height": 7140,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7140
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "8d7b6d03-d225-4b47-95fe-b0ed72e2dd69.png",
+    "width": 1280,
+    "height": 8240,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      8240
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "92ec379c-217c-44be-91e4-0215776b5310-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 5192,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5192
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "92ec379c-217c-44be-91e4-0215776b5310-PROTANOPIA.png",
+    "width": 1280,
+    "height": 5192,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5192
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "92ec379c-217c-44be-91e4-0215776b5310-TRITANOPIA.png",
+    "width": 1280,
+    "height": 5192,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5192
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "92ec379c-217c-44be-91e4-0215776b5310.png",
+    "width": 1280,
+    "height": 5192,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5192
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "944714a9-cd16-4585-88be-50b25e6ec1f1-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 4899,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4899
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "944714a9-cd16-4585-88be-50b25e6ec1f1-PROTANOPIA.png",
+    "width": 1280,
+    "height": 4899,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4899
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "944714a9-cd16-4585-88be-50b25e6ec1f1-TRITANOPIA.png",
+    "width": 1280,
+    "height": 4899,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4899
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "944714a9-cd16-4585-88be-50b25e6ec1f1.png",
+    "width": 1280,
+    "height": 4899,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4899
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "963decb9-50a1-4216-8170-d972ed0f7ce0.png",
+    "width": 1280,
+    "height": 3799,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      3799
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "9647cca8-14ef-4aeb-9af7-5d031c90f40f-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 5568,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5568
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "9647cca8-14ef-4aeb-9af7-5d031c90f40f-PROTANOPIA.png",
+    "width": 1280,
+    "height": 5568,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5568
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "9647cca8-14ef-4aeb-9af7-5d031c90f40f-TRITANOPIA.png",
+    "width": 1280,
+    "height": 5568,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5568
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "9647cca8-14ef-4aeb-9af7-5d031c90f40f.png",
+    "width": 1280,
+    "height": 5568,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5568
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "98d3695e-3e2f-40d4-9d23-4ff3c549d034.png",
+    "width": 1280,
+    "height": 10486,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      10486
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "9c552c7d-1393-4c45-a3a1-f4a01ab46447-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 10342,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      10342
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "9c552c7d-1393-4c45-a3a1-f4a01ab46447-PROTANOPIA.png",
+    "width": 1280,
+    "height": 10342,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      10342
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "9c552c7d-1393-4c45-a3a1-f4a01ab46447-TRITANOPIA.png",
+    "width": 1280,
+    "height": 10342,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      10342
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "9c552c7d-1393-4c45-a3a1-f4a01ab46447.png",
+    "width": 1280,
+    "height": 10342,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      10342
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "abc2af63-6f79-463c-a62b-ec01903a3b0b.png",
+    "width": 1280,
+    "height": 4130,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4207
+    ],
+    "matches_coverage_dimensions": false
+  },
+  {
+    "filename": "ae04c8cb-938c-42d4-b6fa-e5f32c95492e-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 3161,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      3161
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "ae04c8cb-938c-42d4-b6fa-e5f32c95492e-PROTANOPIA.png",
+    "width": 1280,
+    "height": 3161,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      3161
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "ae04c8cb-938c-42d4-b6fa-e5f32c95492e-TRITANOPIA.png",
+    "width": 1280,
+    "height": 3161,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      3161
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "ae04c8cb-938c-42d4-b6fa-e5f32c95492e.png",
+    "width": 1280,
+    "height": 3161,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      3161
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "af6511d8-bf26-460b-a8d0-12567cd8e9f4.png",
+    "width": 1280,
+    "height": 2294,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2294
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "b46a623f-fe2d-42a0-9652-693283d8f44b-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 2872,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2872
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "b46a623f-fe2d-42a0-9652-693283d8f44b-PROTANOPIA.png",
+    "width": 1280,
+    "height": 2872,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2872
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "b46a623f-fe2d-42a0-9652-693283d8f44b-TRITANOPIA.png",
+    "width": 1280,
+    "height": 2872,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2872
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "b46a623f-fe2d-42a0-9652-693283d8f44b.png",
+    "width": 1280,
+    "height": 2872,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2872
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "b7ef48f4-e5ba-473f-9570-a7ef12bdb391-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 5557,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5557
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "b7ef48f4-e5ba-473f-9570-a7ef12bdb391-PROTANOPIA.png",
+    "width": 1280,
+    "height": 5557,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5557
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "b7ef48f4-e5ba-473f-9570-a7ef12bdb391-TRITANOPIA.png",
+    "width": 1280,
+    "height": 5557,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5557
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "b7ef48f4-e5ba-473f-9570-a7ef12bdb391.png",
+    "width": 1280,
+    "height": 5557,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5557
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "cc141d4f-79c2-4265-bd99-d3120380ae16.png",
+    "width": 1280,
+    "height": 4248,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      4248
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "d20a84c3-2d87-4bf9-97da-6d5619737e48-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 2794,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2794
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "d20a84c3-2d87-4bf9-97da-6d5619737e48-PROTANOPIA.png",
+    "width": 1280,
+    "height": 2794,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2794
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "d20a84c3-2d87-4bf9-97da-6d5619737e48-TRITANOPIA.png",
+    "width": 1280,
+    "height": 2794,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2794
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "d20a84c3-2d87-4bf9-97da-6d5619737e48.png",
+    "width": 1280,
+    "height": 2794,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      2794
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "d59aba8a-ae34-417e-a991-4127d9174da9-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 6069,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6069
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "d59aba8a-ae34-417e-a991-4127d9174da9-PROTANOPIA.png",
+    "width": 1280,
+    "height": 6069,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6069
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "d59aba8a-ae34-417e-a991-4127d9174da9-TRITANOPIA.png",
+    "width": 1280,
+    "height": 6069,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6069
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "d59aba8a-ae34-417e-a991-4127d9174da9.png",
+    "width": 1280,
+    "height": 6069,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6069
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "dbbef46a-cd3d-4009-a58f-2437ea68c38f-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 5485,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5485
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "dbbef46a-cd3d-4009-a58f-2437ea68c38f-PROTANOPIA.png",
+    "width": 1280,
+    "height": 5485,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5485
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "dbbef46a-cd3d-4009-a58f-2437ea68c38f-TRITANOPIA.png",
+    "width": 1280,
+    "height": 5485,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5485
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "dbbef46a-cd3d-4009-a58f-2437ea68c38f.png",
+    "width": 1280,
+    "height": 5485,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      5485
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "e558a227-9705-45d2-8783-f73885b90982-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "e558a227-9705-45d2-8783-f73885b90982-PROTANOPIA.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "e558a227-9705-45d2-8783-f73885b90982-TRITANOPIA.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "e558a227-9705-45d2-8783-f73885b90982.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "e96b00dd-75c3-40b6-aca2-1375e74171cd.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "ebfd8972-e12a-4d8f-8df2-043646cc7ef7-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "ebfd8972-e12a-4d8f-8df2-043646cc7ef7-PROTANOPIA.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "ebfd8972-e12a-4d8f-8df2-043646cc7ef7-TRITANOPIA.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "ebfd8972-e12a-4d8f-8df2-043646cc7ef7.png",
+    "width": 1280,
+    "height": 12000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      12000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "ef33391c-4646-4f5d-82ba-39b3d765f1cf-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 6000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "ef33391c-4646-4f5d-82ba-39b3d765f1cf-PROTANOPIA.png",
+    "width": 1280,
+    "height": 6000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "ef33391c-4646-4f5d-82ba-39b3d765f1cf-TRITANOPIA.png",
+    "width": 1280,
+    "height": 6000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "ef33391c-4646-4f5d-82ba-39b3d765f1cf.png",
+    "width": 1280,
+    "height": 6000,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      6000
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "f0bd4282-d47a-46db-8f1a-306c246c3354-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 7911,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7911
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "f0bd4282-d47a-46db-8f1a-306c246c3354-PROTANOPIA.png",
+    "width": 1280,
+    "height": 7911,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7911
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "f0bd4282-d47a-46db-8f1a-306c246c3354-TRITANOPIA.png",
+    "width": 1280,
+    "height": 7911,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7911
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "f0bd4282-d47a-46db-8f1a-306c246c3354.png",
+    "width": 1280,
+    "height": 7911,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7911
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "f8c89d1f-a8e1-4f77-be1b-6b58594794f3-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 3364,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      3364
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "f8c89d1f-a8e1-4f77-be1b-6b58594794f3-PROTANOPIA.png",
+    "width": 1280,
+    "height": 3364,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      3364
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "f8c89d1f-a8e1-4f77-be1b-6b58594794f3-TRITANOPIA.png",
+    "width": 1280,
+    "height": 3364,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      3364
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "f8c89d1f-a8e1-4f77-be1b-6b58594794f3.png",
+    "width": 1280,
+    "height": 3364,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      3364
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "f939dd62-6781-4494-9920-9942127872c1.png",
+    "width": 1280,
+    "height": 9329,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      9329
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "ffeaae90-0c62-46ae-bd0a-d8161778e336-DEUTERANOPIA.png",
+    "width": 1280,
+    "height": 7959,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7959
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "ffeaae90-0c62-46ae-bd0a-d8161778e336-PROTANOPIA.png",
+    "width": 1280,
+    "height": 7959,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7959
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "ffeaae90-0c62-46ae-bd0a-d8161778e336-TRITANOPIA.png",
+    "width": 1280,
+    "height": 7959,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7959
+    ],
+    "matches_coverage_dimensions": true
+  },
+  {
+    "filename": "ffeaae90-0c62-46ae-bd0a-d8161778e336.png",
+    "width": 1280,
+    "height": 7959,
+    "png_integrity_verified": true,
+    "coverage_metadata_available": true,
+    "expected_dimensions": [
+      1280,
+      7959
+    ],
+    "matches_coverage_dimensions": true
+  }
+]

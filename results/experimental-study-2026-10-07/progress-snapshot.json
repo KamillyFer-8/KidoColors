@@ -1,0 +1,17 @@
+{
+  "observed_at_utc": "2026-10-07T14:10:50.519723+00:00",
+  "study_id": "8411729c-fa79-4356-b6f9-bc0972fab79f",
+  "status": "COMPLETED",
+  "planned": 100,
+  "processed": 100,
+  "completed": 53,
+  "failed": 47,
+  "last_processed_source_id": "KC-100",
+  "failure_codes": {
+    "BLOCKED": 2,
+    "BROWSER": 1,
+    "TIMEOUT": 18,
+    "LIMIT_EXCEEDED": 4,
+    "INACCESSIBLE": 22
+  }
+}

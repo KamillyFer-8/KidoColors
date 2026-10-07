@@ -1,4 +1,5 @@
 **/target/
+**/target-v2/
 **/node_modules/
 **/dist/
 **/coverage/
@@ -19,3 +20,10 @@ Thumbs.db
 storage/
 # Downloads da verificação técnica local; evidência resumida em docs/studies.md.
 results/technical-verification/
+# Binários originais dos estudos: preservados localmente; identidade nos manifestos.
+/results/experimental-study-2026-10-07/backend-used.jar
+/results/experimental-study-2026-10-07-run-2-scanner-v2/backend-used.jar
+# Logs already preserved and reviewed as experimental evidence (no runtime secrets).
+!/results/experimental-study-2026-10-07/preflight/*.log
+!/results/experimental-study-2026-10-07-run-2-scanner-v2/preflight/*.log
+!/results/experimental-study-2026-10-07-run-2-scanner-v2/runtime-sanitized.log

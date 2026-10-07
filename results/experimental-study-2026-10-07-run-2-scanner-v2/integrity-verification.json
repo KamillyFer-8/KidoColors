@@ -1,0 +1,21 @@
+{
+  "verified_at": "2026-10-07T17:58:45.090958+00:00",
+  "run1_protected_files_unchanged": 454,
+  "run1_database_rows_unchanged": {
+    "analyses": 100,
+    "study": 1,
+    "issues": 1184
+  },
+  "run1_public_data_unchanged": true,
+  "frozen_sources_unchanged": true,
+  "approved_jar_unchanged": true,
+  "dataset_unchanged": true,
+  "csv_rows": 100,
+  "csv_columns": 44,
+  "csv_matches_typed_observations": true,
+  "unique_analysis_ids": 100,
+  "post_attempts": 1,
+  "csv_sha256": "dc665a8f508581fca0b22a34911f98b466503a9d6282758426a08e9c99a122c7",
+  "study_id": "338883f9-ec46-40f5-8e49-4bef7529a44e",
+  "no_selective_retries": true
+}

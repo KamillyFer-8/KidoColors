@@ -12,7 +12,7 @@ if (-not (Test-Path -LiteralPath $EnvFile -PathType Leaf)) {
 
 # Importa somente configurações conhecidas, sem executar o conteúdo do arquivo.
 $allowedNames = @('DB_URL', 'DB_USERNAME', 'DB_PASSWORD', 'SERVER_PORT',
-    'SCANNER_TIMEOUT_MS', 'SCANNER_SETTLE_MS', 'CAPTURE_STORAGE_PATH')
+    'SCANNER_TIMEOUT_MS', 'SCANNER_SETTLE_MS', 'SCANNER_READINESS_TIMEOUT_MS', 'CAPTURE_STORAGE_PATH')
 $loadedNames = @{}
 foreach ($line in Get-Content -LiteralPath $EnvFile -Encoding UTF8) {
     if ($line -match '^\s*(#|$)') { continue }

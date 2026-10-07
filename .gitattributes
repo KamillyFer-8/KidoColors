@@ -13,3 +13,11 @@ Dockerfile text eol=lf
 *.conf text eol=lf
 *.png binary
 *.jpg binary
+# Preserve the exact bytes identified by experimental SHA-256 inventories.
+results/** -text
+datasets/websites.csv -text
+backend/src/** -text
+kidocolors-core/src/** -text
+pom.xml -text
+backend/pom.xml -text
+kidocolors-core/pom.xml -text

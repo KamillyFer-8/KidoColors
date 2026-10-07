@@ -1,0 +1,101 @@
+[
+  {
+    "code": "BROWSER",
+    "phase": "CLEANUP",
+    "httpStatus": 200,
+    "causeType": "com.microsoft.playwright.impl.TargetClosedError",
+    "technicalMessage": "Target page, context or browser has been closed",
+    "quantity": 1,
+    "sourceIds": [
+      "KC-006"
+    ]
+  },
+  {
+    "code": "INACCESSIBLE",
+    "phase": "NAVIGATION",
+    "httpStatus": 403,
+    "causeType": null,
+    "technicalMessage": null,
+    "quantity": 20,
+    "sourceIds": [
+      "KC-001",
+      "KC-004",
+      "KC-007",
+      "KC-011",
+      "KC-016",
+      "KC-017",
+      "KC-034",
+      "KC-040",
+      "KC-052",
+      "KC-053",
+      "KC-063",
+      "KC-065",
+      "KC-068",
+      "KC-071",
+      "KC-072",
+      "KC-073",
+      "KC-076",
+      "KC-082",
+      "KC-085",
+      "KC-099"
+    ]
+  },
+  {
+    "code": "INACCESSIBLE",
+    "phase": "NAVIGATION",
+    "httpStatus": 405,
+    "causeType": null,
+    "technicalMessage": null,
+    "quantity": 1,
+    "sourceIds": [
+      "KC-094"
+    ]
+  },
+  {
+    "code": "INACCESSIBLE",
+    "phase": "NAVIGATION",
+    "httpStatus": 500,
+    "causeType": null,
+    "technicalMessage": null,
+    "quantity": 1,
+    "sourceIds": [
+      "KC-021"
+    ]
+  },
+  {
+    "code": "QUALITY",
+    "phase": "QUALITY",
+    "httpStatus": 200,
+    "causeType": null,
+    "technicalMessage": null,
+    "quantity": 15,
+    "sourceIds": [
+      "KC-003",
+      "KC-005",
+      "KC-012",
+      "KC-014",
+      "KC-022",
+      "KC-035",
+      "KC-043",
+      "KC-044",
+      "KC-055",
+      "KC-056",
+      "KC-058",
+      "KC-059",
+      "KC-066",
+      "KC-070",
+      "KC-074"
+    ]
+  },
+  {
+    "code": "TIMEOUT",
+    "phase": "NAVIGATION",
+    "httpStatus": null,
+    "causeType": "com.microsoft.playwright.TimeoutError",
+    "technicalMessage": "Timeout 29983ms exceeded.",
+    "quantity": 1,
+    "sourceIds": [
+      "KC-083"
+    ]
+  }
+]

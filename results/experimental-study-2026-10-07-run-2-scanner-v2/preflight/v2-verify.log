@@ -1,0 +1,176 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] kidocolors                                                         [pom]
+[INFO] kidocolors-core                                                    [jar]
+[INFO] backend                                                            [jar]
+[INFO] 
+[INFO] ---------------------< dev.kidocolors:kidocolors >----------------------
+[INFO] Building kidocolors 0.1.0-SNAPSHOT                                 [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] -------------------< dev.kidocolors:kidocolors-core >-------------------
+[INFO] Building kidocolors-core 0.1.0-SNAPSHOT                            [2/3]
+[INFO]   from kidocolors-core\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ kidocolors-core ---
+[INFO] skip non existing resourceDirectory C:\Users\Kamilly Ara�jo\OneDrive\Documentos\Projetos Portifolio\KidoColors\kidocolors-core\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ kidocolors-core ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ kidocolors-core ---
+[INFO] skip non existing resourceDirectory C:\Users\Kamilly Ara�jo\OneDrive\Documentos\Projetos Portifolio\KidoColors\kidocolors-core\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ kidocolors-core ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ kidocolors-core ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running dev.kidocolors.core.AnalysisMathTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.220 s -- in dev.kidocolors.core.AnalysisMathTest
+[INFO] Running dev.kidocolors.core.ColorContrastTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s -- in dev.kidocolors.core.ColorContrastTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ kidocolors-core ---
+[INFO] 
+[INFO] -----------------------< dev.kidocolors:backend >-----------------------
+[INFO] Building backend 0.1.0-SNAPSHOT                                    [3/3]
+[INFO]   from backend\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ backend ---
+[INFO] Copying 2 resources from src\main\resources to target-v2\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ backend ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 43 source files with javac [debug parameters release 21] to target-v2\classes
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ backend ---
+[INFO] Copying 2 resources from src\test\resources to target-v2\test-classes
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ backend ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 11 source files with javac [debug parameters release 21] to target-v2\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ backend ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running dev.kidocolors.backend.analysis.AnalysisApiTest
+12:11:43.139 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [dev.kidocolors.backend.analysis.AnalysisApiTest]: AnalysisApiTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:11:43.656 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration dev.kidocolors.backend.KidoColorsApplication for test class dev.kidocolors.backend.analysis.AnalysisApiTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-07T12:11:44.854-03:00  INFO 5616 --- [           main] d.k.backend.analysis.AnalysisApiTest     : Starting AnalysisApiTest using Java 21.0.12.1 with PID 5616 (started by Kamilly Ara�jo in C:\Users\Kamilly Ara�jo\OneDrive\Documentos\Projetos Portifolio\KidoColors\backend)
+2026-10-07T12:11:44.860-03:00  INFO 5616 --- [           main] d.k.backend.analysis.AnalysisApiTest     : The following 1 profile is active: "test"
+2026-10-07T12:11:46.893-03:00  INFO 5616 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-07T12:11:47.070-03:00  INFO 5616 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 2 JPA repository interfaces.
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\Kamilly Ara�jo\OneDrive\Documentos\Projetos Portifolio\KidoColors\.maven-cache\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2026-10-07T12:11:50.706-03:00  INFO 5616 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-07T12:11:50.975-03:00  INFO 5616 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-10-07T12:11:51.107-03:00  INFO 5616 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-10-07T12:11:51.469-03:00  INFO 5616 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-07T12:11:51.596-03:00  INFO 5616 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-07T12:11:52.244-03:00  INFO 5616 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:kidocolors user=SA
+2026-10-07T12:11:52.248-03:00  INFO 5616 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-07T12:11:52.429-03:00  INFO 5616 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-07T12:11:54.755-03:00  INFO 5616 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-07T12:11:54.910-03:00  INFO 5616 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-07T12:11:57.547-03:00  INFO 5616 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-07T12:11:57.548-03:00  INFO 5616 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-07T12:11:57.554-03:00  INFO 5616 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2026-10-07T12:11:57.631-03:00  INFO 5616 --- [           main] d.k.backend.analysis.AnalysisApiTest     : Started AnalysisApiTest in 13.641 seconds (process running for 17.375)
+2026-10-07T12:11:58.769-03:00  WARN 5616 --- [           main] d.k.backend.analysis.AnalysisService     : Scanner falhou: an�lise=6278f3c7-5735-4d16-8a86-e6a44f480c2b, c�digo=QUALITY, fase=QUALITY
+2026-10-07T12:12:00.475-03:00  WARN 5616 --- [           main] d.k.backend.analysis.AnalysisService     : Scanner falhou: an�lise=f82ddaf5-f3f6-4221-a0c3-b7a6779469e7, c�digo=QUALITY, fase=QUALITY
+2026-10-07T12:12:00.507-03:00  WARN 5616 --- [           main] d.k.backend.analysis.AnalysisService     : Scanner falhou: an�lise=a9c561d7-d763-4ff8-8072-db61bff95492, c�digo=QUALITY, fase=QUALITY
+2026-10-07T12:12:00.976-03:00  WARN 5616 --- [           main] d.k.backend.analysis.AnalysisService     : Scanner falhou: an�lise=87341dd8-007e-4eea-bc52-6a00e9b011ba, c�digo=TIMEOUT, fase=UNKNOWN
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.38 s -- in dev.kidocolors.backend.analysis.AnalysisApiTest
+[INFO] Running dev.kidocolors.backend.analysis.AnalysisServiceTest
+2026-10-07T12:12:01.324-03:00  WARN 5616 --- [           main] d.k.backend.analysis.AnalysisService     : Scanner falhou: an�lise=e78c8c5b-a1c5-454e-a40b-daa7bc1bec38, c�digo=QUALITY, fase=UNKNOWN
+2026-10-07T12:12:01.362-03:00  WARN 5616 --- [           main] d.k.backend.analysis.AnalysisService     : Scanner falhou: an�lise=bd35132b-5282-4e16-b211-bfc7aa770269, c�digo=STORAGE, fase=SIMULATION_SCREENSHOT
+2026-10-07T12:12:01.377-03:00  WARN 5616 --- [           main] d.k.backend.analysis.AnalysisService     : Scanner falhou: an�lise=75eef0f9-e1bb-4a90-ad13-6095dfa89618, c�digo=INACCESSIBLE, fase=UNKNOWN
+2026-10-07T12:12:01.387-03:00  WARN 5616 --- [           main] d.k.backend.analysis.AnalysisService     : Scanner falhou: an�lise=e4d072cb-3562-4426-ad9c-4f97e5bd2b77, c�digo=QUALITY, fase=QUALITY
+2026-10-07T12:12:01.393-03:00  WARN 5616 --- [           main] d.k.backend.analysis.AnalysisService     : Scanner falhou: an�lise=88c4e7d3-48ec-4372-b4fa-1618616b509e, c�digo=TIMEOUT, fase=UNKNOWN
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.353 s -- in dev.kidocolors.backend.analysis.AnalysisServiceTest
+[INFO] Running dev.kidocolors.backend.analysis.SimulationImageServiceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.309 s -- in dev.kidocolors.backend.analysis.SimulationImageServiceTest
+[INFO] Running dev.kidocolors.backend.scanner.NetworkGuardTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s -- in dev.kidocolors.backend.scanner.NetworkGuardTest
+[INFO] Running dev.kidocolors.backend.scanner.PlaywrightPageScannerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 60.06 s -- in dev.kidocolors.backend.scanner.PlaywrightPageScannerTest
+[INFO] Running dev.kidocolors.backend.study.DatasetCsvTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.322 s -- in dev.kidocolors.backend.study.DatasetCsvTest
+[INFO] Running dev.kidocolors.backend.study.StudyApiTest
+2026-10-07T12:13:02.229-03:00  INFO 5616 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [dev.kidocolors.backend.study.StudyApiTest]: StudyApiTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-07T12:13:02.555-03:00  INFO 5616 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration dev.kidocolors.backend.KidoColorsApplication for test class dev.kidocolors.backend.study.StudyApiTest
+2026-10-07T12:13:03.035-03:00  WARN 5616 --- [           main] d.k.backend.analysis.AnalysisService     : Scanner falhou: an�lise=5c6ec0b1-3693-40a0-abc6-d6cdf1b18007, c�digo=QUALITY, fase=UNKNOWN
+2026-10-07T12:13:03.450-03:00  WARN 5616 --- [           main] d.k.backend.analysis.AnalysisService     : Scanner falhou: an�lise=0c67216e-2d74-48b3-b19a-63ed86f1df4b, c�digo=TIMEOUT, fase=UNKNOWN
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.778 s -- in dev.kidocolors.backend.study.StudyApiTest
+[INFO] Running dev.kidocolors.backend.study.StudyMetricsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s -- in dev.kidocolors.backend.study.StudyMetricsTest
+[INFO] Running dev.kidocolors.backend.url.UrlValidatorTest
+[INFO] Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.252 s -- in dev.kidocolors.backend.url.UrlValidatorTest
+[INFO] Running dev.kidocolors.backend.validation.ValidationCliTest
+M�tricas calculadas a partir dos r�tulos fornecidos. Arquivo: C:\Users\KAMILL~1\AppData\Local\Temp\junit-2848559806772237293\fixture.json
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 s -- in dev.kidocolors.backend.validation.ValidationCliTest
+[INFO] Running dev.kidocolors.backend.validation.ValidationEvaluatorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s -- in dev.kidocolors.backend.validation.ValidationEvaluatorTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 77, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ backend ---
+[INFO] Building jar: C:\Users\Kamilly Ara�jo\OneDrive\Documentos\Projetos Portifolio\KidoColors\backend\target-v2\backend-0.1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.5.16:repackage (default) @ backend ---
+[INFO] Replacing main artifact C:\Users\Kamilly Ara�jo\OneDrive\Documentos\Projetos Portifolio\KidoColors\backend\target-v2\backend-0.1.0-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\Kamilly Ara�jo\OneDrive\Documentos\Projetos Portifolio\KidoColors\backend\target-v2\backend-0.1.0-SNAPSHOT.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for kidocolors 0.1.0-SNAPSHOT:
+[INFO] 
+[INFO] kidocolors ......................................... SUCCESS [  0.018 s]
+[INFO] kidocolors-core .................................... SUCCESS [ 13.245 s]
+[INFO] backend ............................................ SUCCESS [01:53 min]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:07 min
+[INFO] Finished at: 2026-10-07T12:13:19-03:00
+[INFO] ------------------------------------------------------------------------

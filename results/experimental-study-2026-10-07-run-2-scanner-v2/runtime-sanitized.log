@@ -1,0 +1,82 @@
+Runtime log snapshot. Database values, URL queries/userinfo/fragments and credential fields redacted.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-07T14:06:03.676-03:00  INFO 15600 --- [           main] Run2Launcher                             : Starting Run2Launcher using Java 21.0.12.1 with PID 15600 (C:\Users\Kamilly Araújo\OneDrive\Documentos\Projetos Portifolio\KidoColors\.maven-cache\run2-launcher started by Kamilly Araújo in C:\Users\Kamilly Araújo\OneDrive\Documentos\Projetos Portifolio\KidoColors)
+2026-10-07T14:06:03.682-03:00  INFO 15600 --- [           main] Run2Launcher                             : The following 1 profile is active: "default"
+2026-10-07T14:06:05.632-03:00  INFO 15600 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-07T14:06:05.801-03:00  INFO 15600 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 147 ms. Found 2 JPA repository interfaces.
+2026-10-07T14:06:07.106-03:00  INFO 15600 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-10-07T14:06:07.152-03:00  INFO 15600 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-07T14:06:07.152-03:00  INFO 15600 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-07T14:06:07.253-03:00  INFO 15600 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-07T14:06:07.255-03:00  INFO 15600 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3467 ms
+2026-10-07T14:06:07.671-03:00  INFO 15600 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-07T14:06:07.955-03:00  INFO 15600 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-10-07T14:06:08.089-03:00  INFO 15600 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-10-07T14:06:08.974-03:00  INFO 15600 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-07T14:06:09.156-03:00  INFO 15600 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-07T14:06:09.969-03:00  INFO 15600 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4ede035e
+2026-10-07T14:06:09.976-03:00  INFO 15600 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-07T14:06:10.624-03:00  INFO 15600 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.11
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-07T14:06:13.684-03:00  INFO 15600 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-07T14:06:15.155-03:00  INFO 15600 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-07T14:06:17.291-03:00  INFO 15600 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-10-07T14:06:17.313-03:00  INFO 15600 --- [           main] Run2Launcher                             : Started Run2Launcher in 15.016 seconds (process running for 20.474)
+RUN2_PREFLIGHT_READY: PostgreSQL/Supabase UP; approved settings verified; browser installed; no site visited.
+2026-10-07T14:06:42.091-03:00  INFO 15600 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-07T14:06:42.091-03:00  INFO 15600 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-07T14:06:42.092-03:00  INFO 15600 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-07T14:08:00.825-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=853760d5-d4c0-41d9-9daf-f9f1d8d073cd, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:08:38.874-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=3ec33c71-9996-4ca8-ac23-d882d3f5d4f3, código=QUALITY, fase=QUALITY
+2026-10-07T14:08:42.535-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=edea3e09-067c-4443-9965-792655e121be, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:09:10.160-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=0be4ccc8-63ba-4368-b56f-cd44e048ccb1, código=QUALITY, fase=QUALITY
+2026-10-07T14:09:19.896-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=abc2af63-6f79-463c-a62b-ec01903a3b0b, código=BROWSER, fase=CLEANUP
+2026-10-07T14:09:23.029-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=ee511fcc-0a8d-4a79-a36c-5366a1f62901, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:11:00.416-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=71643166-b5d1-49b7-8ba4-71ae54d41ad2, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:11:12.239-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=963decb9-50a1-4216-8170-d972ed0f7ce0, código=QUALITY, fase=QUALITY
+2026-10-07T14:11:53.927-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=af6511d8-bf26-460b-a8d0-12567cd8e9f4, código=QUALITY, fase=QUALITY
+2026-10-07T14:12:14.329-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=9ce17a08-0a88-4ea3-bc64-35c2fe64bc30, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:12:17.091-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=563af0e5-6b6e-4fa4-8255-26aba8ec53dd, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:13:46.812-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=aa713a48-46b3-4a52-85a3-9e15d513ed89, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:14:20.943-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=5e9a3653-7204-4519-9968-70347dd13c98, código=QUALITY, fase=QUALITY
+2026-10-07T14:20:49.147-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=dbe3acbf-a8bb-4ac7-8a45-4561761e7b27, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:21:23.680-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=cc141d4f-79c2-4265-bd99-d3120380ae16, código=QUALITY, fase=QUALITY
+2026-10-07T14:22:57.115-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=2c982d77-bb19-4024-88c9-92ee9f753884, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:26:03.859-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=68179ad0-ad12-4987-beb5-bdbb6e23a772, código=QUALITY, fase=QUALITY
+2026-10-07T14:26:19.786-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=8d7b6d03-d225-4b47-95fe-b0ed72e2dd69, código=QUALITY, fase=QUALITY
+2026-10-07T14:30:19.933-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=39f1edc5-e816-4da0-9e2b-18e548a4e53d, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:30:23.539-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=b5f0acd5-fd3a-4611-bc37-c176108dea93, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:31:13.913-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=1a619e89-d9de-4878-86e8-d5682ece72e3, código=QUALITY, fase=QUALITY
+2026-10-07T14:31:40.765-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=e96b00dd-75c3-40b6-aca2-1375e74171cd, código=QUALITY, fase=QUALITY
+2026-10-07T14:32:55.317-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=63f3ca5e-cf3f-4fd3-8963-3cc58de7028c, código=QUALITY, fase=QUALITY
+2026-10-07T14:33:09.651-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=f939dd62-6781-4494-9920-9942127872c1, código=QUALITY, fase=QUALITY
+2026-10-07T14:34:46.865-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=79e3ee4e-f89d-4537-9349-3def77f0fe8c, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:35:06.005-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=abae4f3b-64dc-4a7e-b402-ee8b0be0b818, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:35:37.328-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=27b6286b-f54b-4ca4-81a8-0f9ff9f9c993, código=QUALITY, fase=QUALITY
+2026-10-07T14:36:13.308-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=ef378340-6da8-4505-9326-06db8096c57d, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:37:10.609-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=98d3695e-3e2f-40d4-9d23-4ff3c549d034, código=QUALITY, fase=QUALITY
+2026-10-07T14:37:14.824-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=c5f9d8c9-4651-4090-ae27-06ee3e2d0a54, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:37:18.312-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=999d86b4-4cba-45ee-8042-02926ae51953, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:37:21.327-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=4deeb901-fc15-4d01-9e53-98c67aa9421d, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:37:34.592-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=183dba95-f143-49b4-a74f-462cc278d430, código=QUALITY, fase=QUALITY
+2026-10-07T14:37:54.546-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=2792beb8-854d-436b-9597-ff0b9ceb5877, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:40:40.452-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=0c0dea35-96e8-44a3-87a9-3ce8129ad3e4, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:41:12.842-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=f86c6c94-eb7e-4ff9-8a7e-6e0d63a57917, código=TIMEOUT, fase=NAVIGATION
+2026-10-07T14:41:47.885-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=dced6a39-0075-44d3-8122-1783402ccb91, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:44:54.429-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=c2152b15-e595-4bb8-b386-1bc7a3b5b8ea, código=INACCESSIBLE, fase=NAVIGATION
+2026-10-07T14:46:18.250-03:00  WARN 15600 --- [nio-8080-exec-4] d.k.backend.analysis.AnalysisService     : Scanner falhou: análise=37947e49-2df7-4202-8bd2-ea415f91882c, código=INACCESSIBLE, fase=NAVIGATION

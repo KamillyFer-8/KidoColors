@@ -1,0 +1,13 @@
+
+> kidocolors-frontend@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.3 C:/Users/Kamilly Araújo/OneDrive/Documentos/Projetos Portifolio/KidoColors/frontend
+
+
+ Test Files  2 passed (2)
+      Tests  24 passed (24)
+   Start at  10:29:09
+   Duration  59.94s (environment 64%, setup 17%, import 12%, tests 6%, transform 1%)
+
