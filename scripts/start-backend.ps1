@@ -49,8 +49,19 @@ if (-not (Test-Path -LiteralPath $jarPath)) {
 }
 $env:PLAYWRIGHT_BROWSERS_PATH = Join-Path $projectRoot '.playwright'
 $env:PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = '1'
+$javaArguments = @()
+if ($env:OS -eq 'Windows_NT') {
+    # Mesmo contorno usado nos testes Windows: força o pipe NIO a usar TCP local
+    # quando AF_UNIX falha nos caminhos temporários remapeados. Não crie esta pasta.
+    $socketFallbackPath = Join-Path $projectRoot 'backend/target/disabled-unix-sockets'
+    if (Test-Path -LiteralPath $socketFallbackPath) {
+        throw 'O caminho backend/target/disabled-unix-sockets deve permanecer inexistente para o contorno de sockets Windows.'
+    }
+    $javaArguments += "-Djdk.net.unixdomain.tmpdir=$socketFallbackPath"
+}
+$javaArguments += @('-jar', $jarPath)
 Push-Location $projectRoot
 try {
-    & java -jar $jarPath
+    & java @javaArguments
     if ($LASTEXITCODE -ne 0) { throw 'A API não iniciou ou encerrou com erro. Consulte o log do Spring.' }
 } finally { Pop-Location }

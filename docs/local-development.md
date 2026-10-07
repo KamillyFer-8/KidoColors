@@ -54,6 +54,8 @@ Terminal 1, na raiz:
 
 O script importa somente as variáveis conhecidas de `.env.local`, exige as três configurações PostgreSQL, define o caminho do Chromium e inicia o JAR. Não executa Docker nem carrega credenciais de Compose. Se a política do PowerShell bloquear scripts locais, use `powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\start-backend.ps1`; essa opção vale apenas para esse processo.
 
+No Windows, o script aplica o mesmo contorno de sockets dos testes: `jdk.net.unixdomain.tmpdir` aponta para `backend/target/disabled-unix-sockets`, que deve permanecer inexistente. Isso faz o pipe interno do Java NIO usar TCP local quando sockets AF_UNIX falham com `Invalid argument: connect` em caminhos temporários remapeados. A opção vale apenas para a JVM iniciada pelo script; a conexão JDBC e o endereço HTTP permanecem os configurados. Não é aplicada no Linux ou nos containers. Contexto técnico: [discussão do OpenJDK sobre AF_UNIX no Windows](https://mail.openjdk.org/pipermail/nio-dev/2023-March/013297.html).
+
 Para revisar o formato sem iniciar a API nem conectar ao banco:
 
 ```powershell
@@ -89,5 +91,7 @@ npm.cmd run build
 Sem configuração real do Supabase, podem ser verificados testes/builds e o formato do script; a conexão PostgreSQL hospedada e o fluxo navegador → API → banco continuam pendentes. Nenhuma credencial precisa ser enviada ao chat. Depois de configurar localmente, informe apenas que o arquivo está pronto para realizar a verificação integrada.
 
 Verificação em 07/10/2026: `mvn verify` passou com 27 testes Core e 73 Backend, sem falhas ou testes ignorados, e gerou o JAR. O Front-End passou nos 24 testes, lint, TypeScript e build. O script foi verificado quanto a sintaxe, preservação de senha literal, rejeição de configuração incompleta e de variáveis inesperadas. Nenhuma conexão real ao Supabase foi realizada e nenhum Docker foi executado nesta atualização.
+
+Verificação integrada posterior em 07/10/2026: após configurar as credenciais locais e aplicar o contorno de sockets Windows, a API iniciou na porta 8080 com PostgreSQL hospedado conectado e JPA inicializado. `/api/health` respondeu `UP` executando `SELECT 1`, e `/api/analyses?page=0&size=20` respondeu com histórico vazio. Os mesmos endpoints responderam pelo proxy Vite na porta 5173. Isso verifica conexão e leitura, sem comprovar análise completa, geração de capturas ou persistência de novos relatórios. Nenhum Docker ou lote do estudo foi executado.
 
 Referências: [Supabase com Spring Boot](https://supabase.com/docs/guides/getting-started/quickstarts/spring-boot), [conexões, pooling e SSL](https://supabase.com/docs/guides/database/connecting-to-postgres), [desativação da Data API](https://supabase.com/docs/guides/api/securing-your-api), [SSL no PostgreSQL JDBC](https://jdbc.postgresql.org/documentation/ssl/).

@@ -185,7 +185,7 @@ POST /api/analyses; GET /api/analyses/{id}; GET /api/analyses; GET /api/analyses
 
 Fase 9: desenvolvimento local sem Docker e PostgreSQL hospedado documentados; Dockerfiles, Nginx, Compose com Front-End/API/PostgreSQL, volumes e healthchecks preservados como alternativa. O Compose define seu próprio PostgreSQL e não depende de Supabase. [Desenvolvimento local](docs/local-development.md) e [execução alternativa com Docker](docs/docker.md).
 
-Na mudança de infraestrutura, Docker não está instalado no notebook e nenhuma validação local de containers é declarada concluída. Os arquivos Docker são revisados estaticamente; a conexão real com Supabase depende da configuração local do projeto e permanece pendente.
+Na mudança de infraestrutura, Docker não está instalado no notebook e nenhuma validação local de containers é declarada concluída. Os arquivos Docker são revisados estaticamente. Em 07/10/2026, após configurar as credenciais locais e corrigir a inicialização de sockets Java no Windows, a API conectou ao Supabase: prontidão (`SELECT 1`) e histórico vazio foram verificados diretamente e pelo proxy Vite. A análise completa e a gravação de relatórios com PostgreSQL hospedado continuam pendentes.
 
 Verificação da mudança em 07/10/2026, sem Docker: `mvn verify` passou com 100 testes Java (27 Core e 73 Backend), nenhum ignorado, e gerou o JAR executável. O Front-End passou nos 24 testes, lint, TypeScript e build. O script local foi verificado sem conexão ao banco. Os testes mantêm H2 em memória e fixtures Chromium; não dependem do Supabase real.
 
