@@ -17,3 +17,5 @@ Thumbs.db
 .maven-cache/
 .playwright/
 storage/
+# Downloads da verificação técnica local; evidência resumida em docs/studies.md.
+results/technical-verification/

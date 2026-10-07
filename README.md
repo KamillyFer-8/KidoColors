@@ -195,6 +195,8 @@ Verificação integrada em 07/10/2026: uma única análise técnica de `https://
 
 A [execução do CI da correção Windows](https://github.com/KamillyFer-8/KidoColors/actions/runs/37622533400), commit `e355197`, passou. O fluxo principal local está verificado; a validação humana da Fase 8 e o dataset aprovado para a Fase 11 permanecem pendentes.
 
+Também em 07/10/2026, um lote técnico de uma página confirmou importação CSV, processamento real, persistência no Supabase e exportação: CSV de resultados baixado e lido, JSON recuperado e dataset original com SHA-256 idêntico. [Evidência e limites da verificação](docs/studies.md#verificação-integrada-da-exportação). A fórmula do score tem testes para cobertura nula, 0, 100, arredondamento, entradas inválidas e exclusão de textos não avaliáveis; isso valida o cálculo, sem comprovar eficácia empírica do detector.
+
 Verificação da mudança em 07/10/2026, sem Docker: `mvn verify` passou com 100 testes Java (27 Core e 73 Backend), nenhum ignorado, e gerou o JAR executável. O Front-End passou nos 24 testes, lint, TypeScript e build. O script local foi verificado sem conexão ao banco. Os testes mantêm H2 em memória e fixtures Chromium; não dependem do Supabase real.
 
 Fase 10: Git local na branch main e repositório público [KamillyFer-8/KidoColors](https://github.com/KamillyFer-8/KidoColors) criado. GitHub Actions configura lint, testes e build do Front-End, `mvn verify` para Backend/Core com Chromium Linux e verificação HTTP dos containers Nginx/API/PostgreSQL. [Guia de Git, commits, publicação e CI](docs/github.md). Consulte a aba Actions para o resultado remoto; os testes locais não substituem essa execução.

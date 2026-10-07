@@ -61,4 +61,10 @@ Os avisos de diferenciação continuam sendo heurísticos, separados do score AA
 
 ## Testes
 
-Testes verificam CSV com aspas, vírgulas, quebras de linha, BOM, limites, IDs repetidos, UTF-8 inválido e hash; métricas com scores zero/nulos, medianas e categorias; HTTP multipart, continuidade depois de URL inválida e timeout, mesma chamada de scanner, persistência JPA/H2, vínculo com análises, consulta e exportação. Scanner e imagens são simulados somente nos testes do lote; os testes existentes do scanner continuam usando páginas locais e Chromium real. A integração completa com PostgreSQL real permanece para a fase de execução integrada.
+Testes verificam CSV com aspas, vírgulas, quebras de linha, BOM, limites, IDs repetidos, UTF-8 inválido e hash; métricas com scores zero/nulos, medianas e categorias; HTTP multipart, continuidade depois de URL inválida e timeout, mesma chamada de scanner, persistência JPA/H2, vínculo com análises, consulta e exportação. Scanner e imagens são simulados somente nos testes do lote; os testes existentes do scanner continuam usando páginas locais e Chromium real.
+
+## Verificação integrada da exportação
+
+Em 07/10/2026, um lote técnico com uma única linha para `https://example.com/` foi processado com scanner real e PostgreSQL hospedado no Supabase. O lote terminou COMPLETED, com uma análise concluída e nenhuma falha. Não é parte do estudo de aproximadamente 100 websites.
+
+A exportação de resultados respondeu HTTP 200 com cabeçalho `attachment`; o arquivo foi baixado e lido como CSV, com uma linha. O GET JSON recuperou o mesmo lote persistido e sua análise. O CSV original foi baixado e seu SHA-256 coincidiu com o arquivo importado. Os downloads estão apenas no diretório local ignorado `results/technical-verification/`; nenhuma credencial pertence a esses artefatos. Essa checagem confirma processamento e exportação reais, sem substituir rotulagem humana ou validação empírica do detector.
