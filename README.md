@@ -12,9 +12,9 @@ A estrutura da Fase 8 está preparada: [protocolo de validação manual](docs/va
 
 Abra esta pasta inteira no VS Code. Use Terminal → Novo Terminal, na raiz.
 
-Ferramentas: JDK 21 (incluindo javac), Maven 3.9+, Node.js LTS com npm, Git e, na Fase 9, Docker Desktop com Compose e suporte a containers Linux. PostgreSQL será executado por Docker; não será necessário instalar um servidor separadamente.
+Ferramentas para desenvolvimento: JDK 21 (incluindo javac), Maven 3.9+, Node.js 24+ com npm e Git. React/Vite e Spring Boot/Core executam localmente; PostgreSQL fica hospedado, preferencialmente no Supabase. Docker é opcional e não é requisito para desenvolver ou executar desta forma.
 
-Na inspeção inicial foram encontrados Java 21.0.12.1, Maven 3.9.16, Node/npm, Git e VS Code. Docker não foi encontrado no PATH; pode estar instalado sem estar acessível pelo terminal.
+Supabase é usado somente como PostgreSQL acessado por JDBC/JPA. Nenhum SDK, Auth, Storage ou API automática é necessário. O notebook não utiliza Docker; a ausência dele não bloqueia as fases seguintes.
 
 Extensão útil agora: Extension Pack for Java, para navegação, execução e depuração Java. Depois: Spring Boot Extension Pack para iniciar/depurar a API, ESLint para avisos do Front-End e Prettier para formatação. A extensão Docker é opcional para visualizar containers. Os comandos não dependem dessas extensões.
 
@@ -25,9 +25,8 @@ mvn -version
 node --version
 npm.cmd --version
 git --version
-docker compose version
 
-# Executar testes e gerar JAR do Core
+# Executar testes do Core/Backend e gerar os JARs
 $env:PLAYWRIGHT_BROWSERS_PATH = Join-Path (Get-Location).Path '.playwright'
 mvn.cmd '-Dmaven.repo.local=.maven-cache' verify
 ```
@@ -62,12 +61,42 @@ KidoColors/
 ├── pom.xml                Build Maven dos módulos Java
 ├── docker-compose.yml     Execução completa (Fase 9)
 ├── .env.example
+├── .env.docker.example    Variáveis do Compose opcional
+├── scripts/              Inicialização local e verificação HTTP
 └── README.md
 ```
 
 Somente os módulos implementados entram no Maven. As configurações Docker e CI estão preparadas, com limites de verificação documentados.
 
-## Arquitetura
+## Duas formas de execução
+
+**Desenvolvimento local sem Docker:** configure `.env.local` com `DB_URL`, `DB_USERNAME` e `DB_PASSWORD` do PostgreSQL hospedado. [Guia do Supabase, preparação do Chromium e testes](docs/local-development.md). Depois da preparação, use dois terminais do VS Code:
+
+```powershell
+# Terminal 1, na raiz: Spring Boot + Core → PostgreSQL hospedado
+.\scripts\start-backend.ps1
+```
+
+```powershell
+# Terminal 2, na raiz: React/Vite → API local
+cd frontend
+npm.cmd ci
+npm.cmd run dev
+```
+
+Abra `http://127.0.0.1:5173`. Credenciais ficam somente no arquivo local ignorado pelo Git; não pertencem ao React.
+
+**Alternativa completa com Docker:** quem tem Docker e Compose pode executar React/Nginx → Spring Boot → PostgreSQL em containers, sem Supabase:
+
+```powershell
+if (-not (Test-Path .env.docker)) { Copy-Item .env.docker.example .env.docker }
+# Defina DB_PASSWORD em .env.docker antes de continuar.
+docker compose --env-file .env.docker up -d --build --wait
+```
+
+Abra `http://localhost:3000`. [Guia de Docker, volumes, portas e logs](docs/docker.md). Os dois bancos são independentes; capturas locais ficam em `storage/captures`, e capturas Docker no volume `captures`.
+
+## Arquitetura da aplicação
 
 React → API Spring → Scanner → KidoColors Core → PostgreSQL.
 
@@ -144,7 +173,7 @@ Captura real da Fase 6: histórico com a API indisponível, sem registros ou mé
 6. Histórico: relatórios anteriores e evolução simples por URL.
 7. Lote: CSV, mesmo serviço, duração, falhas e exportação.
 8. Validação: protocolo manual e métricas a partir de rótulos reais.
-9. Docker: aplicação completa local, portas, variáveis, logs e verificação integrada.
+9. Infraestrutura: execução local com PostgreSQL hospedado, Docker opcional reproduzível, documentação dos dois modos, variáveis e segurança. Revisão Docker estática quando ele não está instalado.
 10. GitHub: Git, CI, documentação e screenshots reais.
 11. Estudo: dataset aprovado, coleta, exportação, estatísticas e conclusões reais.
 
@@ -154,9 +183,12 @@ POST /api/analyses; GET /api/analyses/{id}; GET /api/analyses; GET /api/analyses
 
 ## Docker e CI
 
-Fase 9 preparada: Dockerfiles, Nginx, Compose com Front-End/API/PostgreSQL, volumes e healthchecks. Após preparar `.env` e iniciar Docker Desktop com containers Linux, execute `docker compose up --build`. A interface usa localhost:3000; API, localhost:8080. [Guia completo: execução, portas, logs, persistência e recriação](docs/docker.md).
+Fase 9: desenvolvimento local sem Docker e PostgreSQL hospedado documentados; Dockerfiles, Nginx, Compose com Front-End/API/PostgreSQL, volumes e healthchecks preservados como alternativa. O Compose define seu próprio PostgreSQL e não depende de Supabase. [Desenvolvimento local](docs/local-development.md) e [execução alternativa com Docker](docs/docker.md).
 
-Verificação em 06/10/2026: os 7 testes AnalysisApiTest passaram e o JAR foi gerado, incluindo a nova prontidão API/banco com H2. Docker não foi encontrado no terminal nem nos locais padrão do Desktop. Build das imagens e fluxo integrado com PostgreSQL/Chromium Linux permanecem pendentes; não há execução em containers declarada concluída.
+Na mudança de infraestrutura, Docker não está instalado no notebook e nenhuma validação local de containers é declarada concluída. Os arquivos Docker são revisados estaticamente; a conexão real com Supabase depende da configuração local do projeto e permanece pendente.
+
+Verificação da mudança em 07/10/2026, sem Docker: `mvn verify` passou com 100 testes Java (27 Core e 73 Backend), nenhum ignorado, e gerou o JAR executável. O Front-End passou nos 24 testes, lint, TypeScript e build. O script local foi verificado sem conexão ao banco. Os testes mantêm H2 em memória e fixtures Chromium; não dependem do Supabase real.
+
 Fase 10: Git local na branch main e repositório público [KamillyFer-8/KidoColors](https://github.com/KamillyFer-8/KidoColors) criado. GitHub Actions configura lint, testes e build do Front-End, `mvn verify` para Backend/Core com Chromium Linux e verificação HTTP dos containers Nginx/API/PostgreSQL. [Guia de Git, commits, publicação e CI](docs/github.md). Consulte a aba Actions para o resultado remoto; os testes locais não substituem essa execução.
 
 Verificação local da Fase 10 em 06/10/2026: 100 testes Java passaram (27 Core e 73 Backend), com JAR executável gerado. Os 24 testes do Front-End, lint e build passaram. O scanner foi testado com Chromium em fixtures locais no Windows; H2 continua restrito aos testes. PostgreSQL/containers, runner Linux e revisão humana ainda exigem suas verificações próprias.

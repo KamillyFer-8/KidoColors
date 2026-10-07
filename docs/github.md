@@ -1,6 +1,8 @@
 # Git e integração contínua — Fase 10
 
-O repositório local usa a branch `main`. `.gitignore` exclui credenciais `.env`, dependências, builds, cache Maven, navegador baixado e capturas locais; `.env.example` permanece versionável. `.gitattributes` padroniza finais de linha dos arquivos de código. O template de pull request pede descrição da mudança e evidência de verificação.
+O repositório local usa a branch `main`. `.gitignore` exclui `.env`, `.env.local`, `.env.docker`, dependências, builds, cache Maven, navegador baixado e capturas locais; `.env.example` e `.env.docker.example` contêm somente exemplos sem credenciais reais e permanecem versionáveis. `.gitattributes` padroniza finais de linha dos arquivos de código. O template de pull request pede descrição da mudança e evidência de verificação.
+
+Docker é opcional no computador de desenvolvimento. O [modo local](local-development.md) usa PostgreSQL hospedado; os jobs Java e Front-End usam testes isolados sem Supabase. O job Containers continua como verificação da alternativa Docker no runner do GitHub, independente do notebook e de seu banco hospedado.
 
 ## O que o CI verifica
 

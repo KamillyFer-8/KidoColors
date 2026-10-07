@@ -31,75 +31,27 @@ Limitação de segurança: a validação DNS e a conexão do Playwright são ope
 
 ## Executar no terminal PowerShell do VS Code
 
-Requer Docker Desktop iniciado para o banco. `compose.db.yml` executa somente PostgreSQL para desenvolvimento com Java/Vite no computador. O Compose padrão reúne os três serviços; consulte [execução completa local — Fase 9](../docs/docker.md). Os dois modos usam projetos e volumes de banco separados.
+O desenvolvimento usa Spring Boot/Core local e PostgreSQL hospedado, preferencialmente no Supabase. Docker é opcional. A configuração existente `application.yml` utiliza `DB_URL`, `DB_USERNAME` e `DB_PASSWORD`; JPA, entidades e repositories foram preservados.
 
-Na raiz:
-
-```powershell
-Copy-Item .env.example .env
-# Edite DB_PASSWORD em .env antes de continuar.
-docker compose -f compose.db.yml up -d --wait
-
-# Carregue as variáveis do arquivo local no terminal atual.
-Get-Content .env | ForEach-Object {
-    if ($_ -match '^([A-Z_]+)=(.*)$') {
-        [Environment]::SetEnvironmentVariable($matches[1], $matches[2], 'Process')
-    }
-}
-
-# Mantenha o navegador dentro do projeto. Use o mesmo terminal para os próximos comandos.
-$mavenCache = Join-Path (Get-Location).Path '.maven-cache'
-$env:PLAYWRIGHT_BROWSERS_PATH = Join-Path (Get-Location).Path '.playwright'
-$env:PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = '1'
-mvn.cmd -B -ntp "-Dmaven.repo.local=$mavenCache" '-DskipTests' install
-mvn.cmd -B -ntp -f backend/pom.xml "-Dmaven.repo.local=$mavenCache" exec:java '-Dexec.mainClass=com.microsoft.playwright.CLI' '-Dexec.args=install chromium'
-mvn.cmd -B -ntp "-Dmaven.repo.local=$mavenCache" verify
-java -jar backend/target/backend-0.1.0-SNAPSHOT.jar
-```
-
-Spring não carrega .env automaticamente; por isso as variáveis precisam ser importadas no mesmo terminal que executará Java. DB_URL identifica host/porta/banco; DB_USERNAME e DB_PASSWORD precisam corresponder aos valores do PostgreSQL. Mudar credenciais em .env não altera um banco já inicializado no volume.
-
-O download inicial do Chromium requer internet e espaço em disco. Reinstale-o pelo comando CLI ao mudar a versão do Playwright. storage/captures e .playwright são ignorados pelo Git. Não use -DskipTests para declarar uma fase validada: ele serve apenas para preparar a instalação do navegador antes dos testes.
-
-Em outro terminal:
+Siga [configuração do Supabase, preparação do Chromium e testes](../docs/local-development.md). Depois de preparar o JAR e preencher `.env.local`, execute na raiz:
 
 ```powershell
-$requestBody = @{ url = 'https://example.com'; category = 'Documentação' } | ConvertTo-Json
-$analysis = Invoke-RestMethod -Method Post -Uri 'http://localhost:8080/api/analyses' -ContentType 'application/json' -Body $requestBody
-Invoke-RestMethod -Uri "http://localhost:8080/api/analyses/$($analysis.id)"
-Invoke-RestMethod -Uri 'http://localhost:8080/api/analyses?page=0&size=20'
-Invoke-RestMethod -Uri 'http://localhost:8080/api/analyses/by-url?url=https%3A%2F%2Fexample.com'
-if ($analysis.captureUrl) {
-    Invoke-RestMethod -Uri "http://localhost:8080$($analysis.captureUrl)"
-    Invoke-WebRequest -Uri "http://localhost:8080$($analysis.screenshotUrl)" -OutFile "$($analysis.id).png"
-}
-if ($analysis.reportUrl) {
-    $report = Invoke-RestMethod -Uri "http://localhost:8080$($analysis.reportUrl)"
-    $report.summary
-    $report.issues
-    foreach ($simulation in @('PROTANOPIA', 'DEUTERANOPIA', 'TRITANOPIA')) {
-        Invoke-WebRequest -Uri "http://localhost:8080/api/analyses/$($analysis.id)/screenshot?simulation=$simulation" -OutFile "$($analysis.id)-$simulation.png"
-    }
-}
-
-docker compose -f compose.db.yml logs -f postgres
-docker compose -f compose.db.yml down
+.\scripts\start-backend.ps1
 ```
 
-Ctrl+C encerra a API. down preserva o volume. Para apagar todos os dados locais e recriar o banco, pare primeiro a API e execute conscientemente:
+O script carrega apenas configurações conhecidas no processo atual, sem imprimir credenciais. Spring não lê `.env` automaticamente. A API fica em `localhost:8080`; `/api/health` executa `SELECT 1` no PostgreSQL. Ctrl+C encerra a API. Para recompilar, use os comandos Maven do guia e reinicie o JAR.
 
-```powershell
-docker compose -f compose.db.yml down -v
-docker compose -f compose.db.yml up -d --wait
-```
+Use Session pooler na porta 5432 e SSL para o PostgreSQL hospedado. A conexão real só pode ser verificada após configurar o projeto no Supabase localmente. Não envie senhas ao chat. Screenshots continuam em `storage/captures`, sem Supabase Storage.
 
-Hibernate usa ddl-auto=update somente no desenvolvimento local inicial. Isso cria/atualiza a tabela analysis, mas não substitui migrações versionadas para um banco de produção. Não há deploy público.
+A [alternativa Docker](../docs/docker.md) reúne os três serviços e usa um PostgreSQL próprio, independente do Supabase. `compose.db.yml` permanece disponível para quem escolher um banco em container com Java/Vite locais; esse arquivo não é necessário para o desenvolvimento padrão.
+
+Hibernate mantém `ddl-auto=update` para o projeto de desenvolvimento. Não há migrations versionadas configuradas; esse comportamento não substitui uma estratégia de produção.
 
 ## Testes
 
 mvn verify na raiz executa Core e Backend. UrlValidatorTest e NetworkGuardTest verificam entradas e bloqueios. AnalysisServiceTest isola repositório/scanner e verifica persistência, falhas e tempo real. AnalysisApiTest sobe Spring, valida JSON/HTTP e persiste por JPA num H2 em memória, com scanner mockado. PlaywrightPageScannerTest usa Chromium real, a fixture HTML offline e um servidor HTTP local autorizado exclusivamente no teste; valida estilos, PNG, coleta, limites, redirects, erro HTTP e timeout. H2 é apenas de teste; nenhum registro destes testes representa o estudo. Os testes do scanner não são ignorados quando o navegador está ausente: falham e exigem instalação.
 
-Os testes H2 não comprovam execução em PostgreSQL. Docker/psql não estavam disponíveis na inspeção inicial; o fluxo real PostgreSQL precisa ser verificado quando esse ambiente estiver instalado. Não existe fallback H2 ao executar a aplicação normalmente.
+Os testes H2 não comprovam execução em PostgreSQL. A conexão ao PostgreSQL hospedado será verificada após a configuração local do Supabase. Não existe fallback H2 ao executar a aplicação normalmente. Os testes não carregam .env.local nem dependem do banco real.
 
 Não há lint Java separado configurado nesta fase. O Compose do banco não foi executado neste ambiente.
 

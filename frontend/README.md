@@ -14,7 +14,7 @@ npm.cmd ci
 npm.cmd run dev
 ```
 
-Abra o endereço mostrado pelo Vite (normalmente http://127.0.0.1:5173). Mantenha o back-end e o PostgreSQL em execução, seguindo `../backend/README.md`. O servidor Vite encaminha `/api` para `http://localhost:8080`, conforme `vite.config.ts`, evitando configuração CORS para o desenvolvimento. Se mudar a porta do back-end, ajuste esse destino. Nenhuma credencial de banco pertence ao front-end.
+Abra o endereço mostrado pelo Vite (normalmente http://127.0.0.1:5173). Mantenha o back-end local conectado ao PostgreSQL hospedado, seguindo [desenvolvimento sem Docker](../docs/local-development.md). O servidor Vite encaminha `/api` para `http://localhost:8080`, conforme `vite.config.ts`, evitando configuração CORS para o desenvolvimento. Se mudar a porta do back-end, ajuste esse destino. Nenhuma credencial de banco pertence ao front-end; Docker não é necessário neste modo.
 
 O proxy do Vite só existe no servidor de desenvolvimento. O build gera arquivos estáticos em `dist`; `nginx.conf` configura o proxy `/api` e o fallback das rotas da SPA para execução em Docker. Consulte [execução completa local](../docs/docker.md). `npm.cmd run preview` serve para conferir o build, não para executar a aplicação completa.
 
